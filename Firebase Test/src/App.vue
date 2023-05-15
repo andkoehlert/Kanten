@@ -1,9 +1,13 @@
 <template>
   <div>
   <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/admin">Admin</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">/Home</RouterLink>
+        <RouterLink to="/admin">/Admin</RouterLink>
+        <RouterLink to="/about">/About</RouterLink>
+        <RouterLink to="/voluenteer">/Voluenteer</RouterLink>
+        <RouterLink to="/merch">/Merch</RouterLink>
+        <RouterLink to="/gallery">/Gallery</RouterLink>
+
       </nav>
   
 
@@ -149,6 +153,7 @@ class="button is-danger ml-2">
 
 /* imports
 */
+
 import { RouterLink, RouterView } from 'vue-router';
 
 // import {ref, onMounted} from 'vue'
