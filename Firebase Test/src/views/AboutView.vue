@@ -1,17 +1,19 @@
 <template>
-    <div class="about">
-      <h1>This is an about  page</h1>
-    </div>
+    <nav>
+            <ul>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">VOLOUNTEER</a></li>
+                <li><a href="#">MERCH</a></li>
+                <li><a href="#">GALLERY</a></li>
+            </ul>
+           <div class="kanten-logo">
+            
+           </div>
+      </nav>
 
     
   </template>
   
   <style>
-  @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  }
+  
   </style>
