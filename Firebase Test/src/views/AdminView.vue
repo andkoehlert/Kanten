@@ -71,9 +71,8 @@ Badass todo
   
 
 
-
 <div 
-v-for="todo in todos"
+v-for="todo in todos.value"
 class="card mb-5" 
 :class="{'has-background-success-light' : todo.done}"
 
@@ -157,6 +156,97 @@ import { collection, onSnapshot,
 import { db } from '@/firebase';
 
 
+/*
+Todos*/
+
+
+const todos = ref([
+  /*{
+    id: 'id1',
+    content: 'shave my butt',
+    done: false
+  },
+  {
+    id: 'id2',
+    content: 'wash my butt',
+    done: true
+  }*/
+])
+
+
+
+
+
+onMounted(() => {
+
+onSnapshot(todosCollectionQuery, (querySnapshot) => {
+  const fbTodos = [];
+  querySnapshot.forEach((doc) => {
+  const todo = {
+    id: doc.id,
+    content: doc.data().content,
+    done: doc.data().done,
+    title: doc.data().title,
+    artist: doc.data().artist,
+    time: doc.data().time,
+    description: doc.data().description
+  }
+
+  fbTodos.push(todo)  
+})
+todos.value = fbTodos
+console.log("test", todos.value)
+
+
+
+})
+
+
+})
+
+const newTodoContent = refVue('')
+const newTodoTitle = refVue('')
+const newTodoArtist = refVue('')
+const newTodoTime = refVue('')
+const newTodoDescription = refVue('')
+const addTodo =() => {
+   addDoc(todosCollectionRef, {
+      content: newTodoContent.value,
+      done: false,
+      date: Date.now(),
+      title: newTodoTitle.value,
+      artist: newTodoArtist.value,
+      time: newTodoTime.value,
+      description: newTodoDescription.value,
+      imgURL: addItemData.imgURL
+    });
+  newTodoContent.value = ''
+  newTodoTitle.value = ''
+  newTodoArtist.value = ''
+  newTodoTime.value = ''
+  newTodoDescription.value = ''
+}
+
+/* 
+Delete todo
+*/
+
+const deleteTodo = id => {
+   deleteDoc(doc(todosCollectionRef, id));
+}
+
+const toggleDone = id => {
+  const index = todos.value.findIndex(todo => todo.id
+  === id)
+
+
+ updateDoc(doc(todosCollectionRef, id), {
+  done: !todos.value[index].done
+});
+
+}
+
+
 // Add item data: title, description, image URL and have the button disabled until image is uploaded
 let addItemData = reactive({
   imgURL: '',
@@ -231,93 +321,6 @@ Firebase
 const todosCollectionRef = collection(db, 'todos')
 const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
 
-
-/*
-Todos*/
-
-
-const todos = ref([
-  /*{
-    id: 'id1',
-    content: 'shave my butt',
-    done: false
-  },
-  {
-    id: 'id2',
-    content: 'wash my butt',
-    done: true
-  }*/
-])
-
-
-
-
-
-onMounted(() => {
-
-onSnapshot(todosCollectionQuery, (querySnapshot) => {
-  const fbTodos = [];
-  querySnapshot.forEach((doc) => {
-  const todo = {
-    id: doc.id,
-    content: doc.data().content,
-    done: doc.data().done,
-    title: doc.data().title,
-    artist: doc.data().artist,
-    time: doc.data().time,
-    description: doc.data().description
-  }
-
-  fbTodos.push(todo)  
-})
-todos.value = fbTodos
-
-})
-
-
-})
-
-const newTodoContent = refVue('')
-const newTodoTitle = refVue('')
-const newTodoArtist = refVue('')
-const newTodoTime = refVue('')
-const newTodoDescription = refVue('')
-const addTodo =() => {
-   addDoc(todosCollectionRef, {
-      content: newTodoContent.value,
-      done: false,
-      date: Date.now(),
-      title: newTodoTitle.value,
-      artist: newTodoArtist.value,
-      time: newTodoTime.value,
-      description: newTodoDescription.value,
-      imgURL: addItemData.imgURL
-    });
-  newTodoContent.value = ''
-  newTodoTitle.value = ''
-  newTodoArtist.value = ''
-  newTodoTime.value = ''
-  newTodoDescription.value = ''
-}
-
-/* 
-Delete todo
-*/
-
-const deleteTodo = id => {
-   deleteDoc(doc(todosCollectionRef, id));
-}
-
-const toggleDone = id => {
-  const index = todos.value.findIndex(todo => todo.id
-  === id)
-
-
- updateDoc(doc(todosCollectionRef, id), {
-  done: !todos.value[index].done
-});
-
-}
 
 </script>
 
