@@ -47,6 +47,15 @@ Badass todo
     type="text" 
     placeholder="description">
   
+    <input 
+    v-model="newTodoDescription"
+    class="input" 
+    type="text" 
+    placeholder="description">
+  
+    <input type="file" label="File input" @change="uploadImg">
+
+    
 
   </p>
   <p class="control">
@@ -62,9 +71,8 @@ Badass todo
   
 
 
-
 <div 
-v-for="todo in todos"
+v-for="todo in todos.value"
 class="card mb-5" 
 :class="{'has-background-success-light' : todo.done}"
 
@@ -137,22 +145,15 @@ class="button is-danger ml-2">
 /* imports
 */
 import { RouterLink, RouterView } from 'vue-router';
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-import {ref, onMounted} from 'vue'
+import {ref as refVue, reactive, onMounted} from 'vue'
 import { collection, onSnapshot, 
   addDoc, doc, deleteDoc, updateDoc,   
   query, orderBy,  
 } from "firebase/firestore";
 
 import { db } from '@/firebase';
-
-
-/*
-Firebase
-*/
-
-const todosCollectionRef = collection(db, 'todos')
-const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
 
 
 /*
@@ -194,17 +195,20 @@ onSnapshot(todosCollectionQuery, (querySnapshot) => {
   fbTodos.push(todo)  
 })
 todos.value = fbTodos
+console.log("test", todos.value)
+
+
 
 })
 
 
 })
 
-const newTodoContent = ref('')
-const newTodoTitle = ref('')
-const newTodoArtist = ref('')
-const newTodoTime = ref('')
-const newTodoDescription = ref('')
+const newTodoContent = refVue('')
+const newTodoTitle = refVue('')
+const newTodoArtist = refVue('')
+const newTodoTime = refVue('')
+const newTodoDescription = refVue('')
 const addTodo =() => {
    addDoc(todosCollectionRef, {
       content: newTodoContent.value,
@@ -213,7 +217,8 @@ const addTodo =() => {
       title: newTodoTitle.value,
       artist: newTodoArtist.value,
       time: newTodoTime.value,
-      description: newTodoDescription.value
+      description: newTodoDescription.value,
+      imgURL: addItemData.imgURL
     });
   newTodoContent.value = ''
   newTodoTitle.value = ''
@@ -240,6 +245,82 @@ const toggleDone = id => {
 });
 
 }
+
+
+// Add item data: title, description, image URL and have the button disabled until image is uploaded
+let addItemData = reactive({
+  imgURL: '',
+})
+
+const storage = getStorage();
+ 
+// Firebase storage upload image + get download URL + enable button after image uploaded
+const uploadImg = async(event) => {
+  let file = event.target.files[0]; // get the file
+  console.log("file", file)
+// Create the file metadata
+/** @type {any} */
+const metadata = {
+  contentType: 'image/jpeg'
+};
+
+// Upload file and metadata to the object 'images/mountains.jpg'
+const storageRef = ref(storage, 'images/' + file.name);
+
+const uploadTask = uploadBytesResumable(storageRef, file, metadata);
+// Listen for state changes, errors, and completion of the upload.
+uploadTask.on('state_changed',
+  (snapshot) => {
+    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+    let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    console.log('Upload is ' + progress + '% done');
+    switch (snapshot.state) {
+      case 'paused':
+        console.log('Upload is paused');
+        break;
+      case 'running':
+        console.log('Upload is running');       
+        break;
+    }
+  }, 
+  (error) => {
+    // A full list of error codes is available at
+    // https://firebase.google.com/docs/storage/web/handle-errors
+    switch (error.code) {
+      case 'storage/unauthorized':
+        // User doesn't have permission to access the object
+        break;
+      case 'storage/canceled':
+        // User canceled the upload
+        break;
+
+      // ...
+
+      case 'storage/unknown':
+        // Unknown error occurred, inspect error.serverResponse
+        break;
+    }
+  }, 
+  () => {
+    // Upload completed successfully, now we can get the download URL
+    getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+      console.log('File available at', downloadURL);
+
+        addItemData.imgURL = downloadURL // update variable imgURL and put the image URL link in it. 
+    });
+  }  
+);
+}
+
+
+
+/*
+Firebase
+*/
+
+const todosCollectionRef = collection(db, 'todos')
+const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
+
 
 </script>
 
