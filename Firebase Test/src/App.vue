@@ -1,12 +1,13 @@
 <template>
   <div>
-  <nav>
+  <nav class="nav">
         <RouterLink to="/">/Home</RouterLink>
         <RouterLink to="/admin">/Admin</RouterLink>
         <RouterLink to="/about">/About</RouterLink>
         <RouterLink to="/voluenteer">/Voluenteer</RouterLink>
         <RouterLink to="/merch">/Merch</RouterLink>
         <RouterLink to="/gallery">/Gallery</RouterLink>
+        <RouterLink to="/event">/Event</RouterLink>
 
       </nav>
   
@@ -275,5 +276,12 @@ import { RouterLink, RouterView } from 'vue-router';
 .line-through{
   text-decoration: line-through;
 }
+ 
 
+
+.nav{
+  position: absolute;
+    float: right;
+    z-index: 1;
+}
 </style>
