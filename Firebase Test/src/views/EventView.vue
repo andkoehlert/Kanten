@@ -1,232 +1,257 @@
-<script>
 
-
-</script>
 
 
 <template>
-    
-  <div class="">
-    
-    <div class="relative">
-  
-<!-- Video-->
-
-        <video autoplay muted loop id="myVideo">
-  <source src="../assets/4k.mp4" type="video/mp4">
-</video>
-        <div class="absolute text-5xl  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            
-            <div class="logo ml-60   mix-blend-mode: overlay;" style="  mix-blend-mode: overlay;
-">
-
-<!-- IMG-->
-
-
-    <img src="../assets/Kanten.png" class="logo ml-20 h-56 w-56 object-scale-down	" style="mix-blend-mode: overlay;
-" alt="">
-  </div>
-
-<hr class="line">
-  <!-- Nav-->
-  
-            <ul class="home_nav md:flex	 items-center gap-[10vw] 	  ">
-    <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">Home</a>
-    </li>
-    <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" >Events</a>
-    </li>
-    <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">Gallery</a>
-    </li>
-    <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">About us</a>
-    </li>
-    <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">Contact</a>
-    </li>
-  </ul>
-        <hr class="line">
-        <div class="container m-auto flex grid grid-cols-1 content-around">
-           
-            <div class=" flex items-center justify-center">
-               
- <!-- Buttons socials-->
-             
- <button
- type="button"
- data-te-ripple-init
- data-te-ripple-color="light"
- class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
- style="background-color: #1877f2">
- <svg
-   xmlns="http://www.w3.org/2000/svg"
-   class="h-4 w-4"
-   fill="currentColor"
-   viewBox="0 0 24 24">
-   <path
-     d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
- </svg>
-</button>
-<button
-  type="button"
-  data-te-ripple-init
-  data-te-ripple-color="light"
-  class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-  style="background-color: #c13584">
-  <svg
-  xmlns="http://www.w3.org/2000/svg"
-    class="h-4 w-4"
-    fill="currentColor"
-    viewBox="0 0 24 24">
-    <path
-    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-  </svg>
-</button>
-  <button
-  type="button"
-  data-te-ripple-init
-  data-te-ripple-color="light"
-  class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-  style="background-color: #1769ff">
-  <svg
-  xmlns="http://www.w3.org/2000/svg"
-    class="h-4 w-4"
-    fill="currentColor"
-    viewBox="0 0 24 24">
-    <path
-    d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
-  </svg>
-</button>
-            </div>
-           
-            
-
-        </div>
-        
-        </div>
-        <div class="absolute text-3xl text-amber-400 bottom-3 left-1/2 -translate-x-1/2"> 
-
-
-
-
-
-        </div>
-        <h3 class="absolute text-2xl text-blue-300 top-5 left-5">Top Left</h3>
-        <div class="absolute text-2xl text-green-300 bottom-5 right-5">
-
-            
-        </div>
+   <nav class="navbar" id="myNavbar">
+    <div class="nav-tab">
+        <span class="slash">\</span>
+    <a href="#events">EVENTS</a>
+    <span class="slash">\</span>
+    <a href="#volunteer">VOLUNTEER</a>
+    <span class="slash">\</span>
+    <a href="#merch">MERCH</a>
+    <span class="slash">\</span>
+    <a href="#gallery">GALLERY</a>
+    <span class="slash">\</span>
     </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </a>
+    <div class="kanten-logo">
+            <img src="../assets/Logo Standart.png" alt="shit">
+           </div>
+</nav>
+
+<div class="col-start-2 m-20">
+  <h1 class="text-xl">Events</h1>
+</div>
+<div class="flex justify-center ...">
+  <div>
+    <h2 class="x">
+      X-MASSIVE-DUB
+    </h2>
   </div>
+  
+</div>
+<div class="flex justify-center ...">
+  <div>
+    <button  id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white font-medium text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown hover <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div>
+  </div>
+  
+</div>
+<hr class="h-screen"> 
+
+<div class="grid grid-cols-6 gap-4 mb-20">
+  <div class="col-start-2  ...">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">X-MASSIVE-DUB</h5>
+        </a>
+        <h1 class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</h1>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">X-MASSIVE-DUB is a new.......</p>
+
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+  </div>
+  <div class="col-start-5">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">X-MASSIVE-DUB</h5>
+        </a>
+        <h1 class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</h1>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">X-MASSIVE-DUB is a new.......</p>
+
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+  </div>
+  <div class="col-start-2  ...">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">X-MASSIVE-DUB</h5>
+        </a>
+        <h1 class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</h1>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">X-MASSIVE-DUB is a new.......</p>
+
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+  </div>
+  <div class="col-start-5">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">X-MASSIVE-DUB</h5>
+        </a>
+        <h1 class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</h1>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">X-MASSIVE-DUB is a new.......</p>
+
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+  </div>
+</div>
+
+<!-- Dropdown menu -->
+
 </template>
 
-
 <style>
+    /* CSS styles for the navigation */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      justify-content: space-between;
+    }
+    .nav-tab {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slash {
+  font-size: 35px;
+  color: #ffffff;
+  float: left;
+  margin-left: 20px;
+}
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .kanten-logo {
+        float: right;
+    width: 120px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    
 
-@import 'bulma/css/bulma.min.css';
+    .x{
+    font-size: 5em;
+  text-shadow: 2px 2px #648af3;
 
-#myVideo {
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+    }
+    /* CSS styles for the toggle button */
+    .navbar .icon {
+      display: none;
+    }
+    @media screen and (max-width: 1000px) {
+        .nav-tab {
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+            scale: 80%;
+        }
+        .navbar a {
+            margin-left: 11px;
+            padding: 14px 8px;
+        }
+    }
+   
+    @media screen and (max-width: 700px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+    
+      .navbar a.icon {
+        float: left;
+        display: block;
+      }
+      .slash {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .navbar.responsive {
+        position: relative;
+      }
+    
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
   
-}
-
-.social-icons{
-    
-}
-
-.social-icons img{
-    
-}
-
-#myVideo {
-
-}
-
-/* Add some content at the bottom of the video/page */
-
-
-/* Style the button used to pause/play the video */
-
-
-
-.logo{
-  mix-blend-mode: overlay;
-
-}
-
-
-
-
-/* responsive */
-@media screen and (max-width: 600px) {
-  
-  .logo{
-    width: 1em;
+  <script>
+  // JavaScript function to toggle the responsive class on the navigation
+  function toggleNavbar() {
+    var navbar = document.getElementById("myNavbar");
+    if (navbar.className === "navbar") {
+      navbar.className += " responsive";
+    } else {
+      navbar.className = "navbar";
+    }
   }
-  .home_nav li a{
-    
-    font-size: 0.3em;
-    
-  }
-
-  .relative{
-flex-direction: column;
-    font-size: 0.3em;
-    
-  }
-
-  .line{
-display: none;
-    
-  }
-
-
-  }
-
-  @media screen and (min-width: 1024px) {
-
-  .home_nav li a{
-    
-display: flex;
-flex-direction: row;
-}
-  }
-
-
-</style>
-
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-
-
 </script>
