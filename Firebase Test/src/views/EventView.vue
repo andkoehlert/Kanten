@@ -4,14 +4,16 @@
 <template>
    <nav class="navbar" id="myNavbar">
     <div class="nav-tab">
+      <span class="slash">\</span>
+        <RouterLink to="/">Home</RouterLink>
         <span class="slash">\</span>
-    <a href="#events">EVENTS</a>
+        <RouterLink to="/event">Event</RouterLink>
     <span class="slash">\</span>
-    <a href="#volunteer">VOLUNTEER</a>
+    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
     <span class="slash">\</span>
-    <a href="#merch">MERCH</a>
+    <RouterLink to="/merch">Merch</RouterLink>
     <span class="slash">\</span>
-    <a href="#gallery">GALLERY</a>
+    <RouterLink to="/gallery">Gallery</RouterLink>
     <span class="slash">\</span>
     </div>
     
@@ -19,47 +21,104 @@
         <i class="fa-sharp fa-solid fa-bars"></i>
     </a>
     <div class="kanten-logo">
-            <img src="../assets/Logo Standart.png" alt="shit">
+            <img src="../assets/LogoKanten.png" alt="shit">
            </div>
 </nav>
 
-<div class="col-start-2 m-20">
-  <h1 class="text-xl">Events</h1>
-</div>
-<div class="flex justify-center ...">
-  <div>
-    <h2 class="x">
-      X-MASSIVE-DUB
-    </h2>
-  </div>
-  
-</div>
-<div class="flex justify-center ...">
-  <div>
-    <button  id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white font-medium text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown hover <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7"></path></svg></button>
-<!-- Dropdown menu -->
-<div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-      </li>
-    </ul>
-</div>
-  </div>
-  
-</div>
-<hr class="h-screen"> 
 
-<div class="grid grid-cols-6 gap-4 mb-20">
+<div class=" justify-center md:flex gap-10">
+  <div>
+    <div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+  <a href="#"
+  class="justify-center items-center	"
+  >
+        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        
+        alt="" 
+        
+        
+        />
+    </a>
+    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">DEFT</h1>
+    <RouterLink to="/deft"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      
+      >Read more</RouterLink>
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  
+</div>
+</div>
+  <div>
+<div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+  <a href="#"
+  class="justify-center items-center	"
+  >
+        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        
+        alt="" 
+        
+        
+        />
+    </a>
+    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">VERTEX</h1>
+    <RouterLink to="/vertex"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      
+      >Read more</RouterLink>
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    
+</div>
+</div>
+</div>
+<div class=" justify-center md:flex gap-10">
+  <div>
+    <div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+  <a href="#"
+  class="justify-center items-center	"
+  >
+        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        
+        alt="" 
+        
+        
+        />
+    </a>
+    
+    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">X-MASSIVE-DUB</h1>
+      <RouterLink to="/xmassive"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      
+      >Read more</RouterLink>
+
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    
+</div>
+</div>
+  <div>
+<div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+  <a href="#"
+  class="justify-center items-center	"
+  >
+        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        
+        alt="" 
+        
+        
+        />
+    </a>
+    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">MANA CLUB</h1>
+    <RouterLink to="/manaclub"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      
+      >Read more</RouterLink>
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    
+</div>
+</div>
+</div>
+
+
+<!--<div class="grid grid-cols-6 gap-4 mb-20">
   <div class="col-start-2  ...">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
@@ -137,7 +196,7 @@
 </div>
   </div>
 </div>
-
+ -->
 <!-- Dropdown menu -->
 
 </template>
@@ -195,6 +254,10 @@
   text-shadow: 2px 2px #648af3;
 
     }
+
+.event_logo{
+}
+
     /* CSS styles for the toggle button */
     .navbar .icon {
       display: none;

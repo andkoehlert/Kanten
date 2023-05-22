@@ -1,5 +1,26 @@
 <template>
-
+ <nav class="navbar" id="myNavbar">
+    <div class="nav-tab">
+      <span class="slash">\</span>
+        <RouterLink to="/">Home</RouterLink>
+        <span class="slash">\</span>
+        <RouterLink to="/event">Event</RouterLink>
+    <span class="slash">\</span>
+    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
+    <span class="slash">\</span>
+    <RouterLink to="/merch">Merch</RouterLink>
+    <span class="slash">\</span>
+    <RouterLink to="/gallery">Gallery</RouterLink>
+    <span class="slash">\</span>
+    </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </a>
+    <div class="kanten-logo">
+            <img src="../assets/LogoKanten.png" alt="shit">
+           </div>
+</nav>
 
 
 
@@ -72,7 +93,7 @@ Badass todo
 
 
 <div 
-v-for="todo in todos.value"
+v-for="todo in todos"
 class="card mb-5" 
 :class="{'has-background-success-light' : todo.done}"
 
@@ -156,25 +177,15 @@ import { collection, onSnapshot,
 import { db } from '@/firebase';
 
 
+const todosCollectionRef = collection(db, 'todos')
+const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
+
 /*
 Todos*/
 
 
-const todos = ref([
-  /*{
-    id: 'id1',
-    content: 'shave my butt',
-    done: false
-  },
-  {
-    id: 'id2',
-    content: 'wash my butt',
-    done: true
-  }*/
+let todos = refVue([
 ])
-
-
-
 
 
 onMounted(() => {
@@ -193,9 +204,9 @@ onSnapshot(todosCollectionQuery, (querySnapshot) => {
   }
 
   fbTodos.push(todo)  
-})
-todos.value = fbTodos
-console.log("test", todos.value)
+  })
+  todos.value = fbTodos
+  console.log("test", todos.value)
 
 
 
@@ -203,7 +214,7 @@ console.log("test", todos.value)
 
 
 })
-
+ 
 const newTodoContent = refVue('')
 const newTodoTitle = refVue('')
 const newTodoArtist = refVue('')
@@ -317,9 +328,6 @@ uploadTask.on('state_changed',
 /*
 Firebase
 */
-
-const todosCollectionRef = collection(db, 'todos')
-const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
 
 
 </script>

@@ -2,14 +2,16 @@
 
 <nav class="navbar" id="myNavbar">
     <div class="nav-tab">
+      <span class="slash">\</span>
+        <RouterLink to="/">Home</RouterLink>
         <span class="slash">\</span>
-    <a href="#events">EVENTS</a>
+        <RouterLink to="/event">Event</RouterLink>
     <span class="slash">\</span>
-    <a href="#volunteer">VOLUNTEER</a>
+    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
     <span class="slash">\</span>
-    <a href="#merch">MERCH</a>
+    <RouterLink to="/merch">Merch</RouterLink>
     <span class="slash">\</span>
-    <a href="#gallery">GALLERY</a>
+    <RouterLink to="/gallery">Gallery</RouterLink>
     <span class="slash">\</span>
     </div>
     
@@ -17,10 +19,9 @@
         <i class="fa-sharp fa-solid fa-bars"></i>
     </a>
     <div class="kanten-logo">
-            <img src="../assets/Logo Standart.png" alt="shit">
+            <img src="../assets/LogoKanten.png" alt="shit">
            </div>
 </nav>
-
   
 
 

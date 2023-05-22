@@ -7,7 +7,13 @@
         <RouterLink to="/voluenteer">/Voluenteer</RouterLink>
         <RouterLink to="/merch">/Merch</RouterLink>
         <RouterLink to="/gallery">/Gallery</RouterLink>
+        <br>
         <RouterLink to="/event">/Event</RouterLink>
+        <RouterLink to="/xmassive">/Xmassive</RouterLink>
+        <RouterLink to="/manaclub">/Manaclub</RouterLink>
+        <RouterLink to="/vertex">/vertex</RouterLink>
+        <RouterLink to="/hoodie">/hoodie</RouterLink>
+
 
       </nav>
   
@@ -156,7 +162,6 @@ class="button is-danger ml-2">
 */
 
 import { RouterLink, RouterView } from 'vue-router';
-
 // import {ref, onMounted} from 'vue'
 // import { collection, onSnapshot, 
 //   addDoc, doc, deleteDoc, updateDoc,   

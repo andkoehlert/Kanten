@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -56,7 +57,49 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/EventView.vue')
+    },
+    {
+      path: '/xmassive',
+      name: 'xmassive',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/XmassiveView.vue')
+    },
+    {
+      path: '/manaclub',
+      name: 'manaclub',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ManaclubView.vue')
+    },
+    {
+      path: '/vertex',
+      name: 'vertex',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/VertexView.vue')
+    },
+
+    {
+      path: '/deft',
+      name: 'deft',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/DeftView.vue')
+    },
+    {
+      path: '/hoodie',
+      name: 'hoodie',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/HoodieView.vue')
     }
+  
   ]
 })
 

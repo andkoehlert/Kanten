@@ -8,8 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.13",
+    "@popperjs/core": "^2.11.7",
     "bulma": "^0.9.4",
     "firebase": "^9.21.0",
+    "flowbite": "^1.6.5",
+    "tw-elements": "^1.0.0-beta2",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

@@ -12,6 +12,7 @@
     class="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl"
   >
   <div class="logo content-center relative flex items-center justify-center mb-12">
+    
     <img src="../assets/Kanten.png" class="logo ml-20 h-56 w-56 object-scale-down	;
 " alt="">
 
@@ -28,28 +29,45 @@
     </li>
     <hr  class="md:invisible">
     <li>
+      <RouterLink to="/event"
+      class="hover:text-white text-white text-2xl font-bold transition
+     duration-150 border-b-8 border-transparent 
+     hover:border-purple-500"
       
-      <a class="hover:text-white text-white text-2xl font-bold transition
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" >Events</a>
+      
+      >Event</RouterLink>
+
+    
     </li>
     <hr  class="md:invisible">
     <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
+      <RouterLink to="/gallery"
+      class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">Gallery</a>
+     hover:border-purple-500"
+      >Gallery</RouterLink>
+
+     
     </li>
     <hr  class="md:invisible">
     <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
+      <RouterLink to="/about"
+      class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">About us</a>
+     hover:border-purple-500"
+      >About</RouterLink>
+
+      
     </li>
     <hr  class="md:invisible">
     <li>
-      <a class="hover:text-white text-white text-2xl font-bold transition
+      <RouterLink to="/merch"
+      class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" href="#">Contact</a>
+     hover:border-purple-500"
+      >Merch</RouterLink>
+
+    
     </li>
     <hr  class="md:invisible">
   </ul>
