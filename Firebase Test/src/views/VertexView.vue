@@ -43,13 +43,14 @@
 <h1 class="text-white">UPCOMING EVENTS</h1>
 
 </div>
-    <div class="block flex justify-center  sm:px-20 px-2 py-6">
-   <div class=" bg-gray-500 text-white rounded-lg py-20">
-   <p class="block px-4 text-white-800 hover:bg-indigo-500">X-Massive DUB takes you back to the roots on the 2nd of December! 
+<div class="block flex justify-center px-40 py-6">
+   <div class=" bg-gray-500 text-white rounded-lg py-20 px-20">
+   <p class="block px-4 py-2 text-white-800 ">X-Massive DUB takes you back to the roots on the 2nd of December! 
 
 On this evening in cold December, we celebrate everything about 
 dancehall, reggae, dub and its sound system culture.
 We've assembled a team of DJ selectors who will spin all the vinyl you didn't know you loved.
+
 The event is FREE, so let's get together and enjoy a good evening of bass together.
  It will be nothing less than smoking hot, despite the time of year. 
 
@@ -66,13 +67,14 @@ PROGRAM:
 
 
 
+
 <div class="block flex justify-center px-40">
 <h1 class="text-white">PAST EVENTS</h1>
 
 </div>
     <div class="block flex justify-center px-40 py-6">
    <div class=" bg-gray-500 text-white rounded-lg py-20 px-20">
-   <p class="block px-4 py-2 text-white-800 hover:bg-indigo-500">X-Massive DUB takes you back to the roots on the 2nd of December! 
+   <p class="block px-4 py-2 text-white-800 ">X-Massive DUB takes you back to the roots on the 2nd of December! 
 
 On this evening in cold December, we celebrate everything about 
 dancehall, reggae, dub and its sound system culture.
