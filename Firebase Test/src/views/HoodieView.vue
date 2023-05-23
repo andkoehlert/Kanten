@@ -23,30 +23,115 @@
 </nav>
 
 
-
-
-<div class="flex justify-center ...">
-  <div>01</div>
-  <div>02</div>
+<div class="relative h-screen md:flex items-center justify-center justify-around  overflow-hidden">
+  
+  <div class="carousel flex justify-around">
+    
+    <div class="carousel rounded-box w-96">
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div> 
+  <div class="carousel-item w-1/2">
+    <img src="../assets/Cap.webp" class="w-full" />
+  </div>
 </div>
+</div>
+  
+
+
+<div class="buy grid justify-around py-40">
+  <h1 class="x flex">
+    KANTEN - HOODIE
+  </h1>
+  <p class="">
+    100 DKK
+  </p>
+  <div class="flex gap-6">
+  
+  <p class="">  
+    XL
+    <p>
+    L
+    </p>
+<p>
+M
+</p>
+<p>
+S
+</p>
+  </p>
+  </div>
+
+  <div class=" gap-4 flex">
+        <button class="w-5 h-5 rounded-full 
+                       bg-blue-500 ">
+            
+        </button>
+        <button class="w-5 h-5 rounded-full 
+                       bg-red-500 ">
+            
+        </button>
+        <button class="w-5 h-5 rounded-full 
+                       bg-yellow-500 ">
+            
+        </button>
+        <button class="w-5 h-5 rounded-full 
+                       bg-white ">
+            
+        </button>
+</div>
+<div class="flex">
+  <RouterLink to="/vertex"
+      class="flex px-3 py-2 text-sm mt-6 font-medium  text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      
+      >BUY NOW</RouterLink>
+</div>
+</div>
+
+</div>
+
+
 
 </template>
 
+
+<script>
+
+
+</script>
+
 <style>
 
-body{
-    
-}
+
 body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-      justify-content: space-between;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0e0e;
+  margin: 0px;
+   min-height: 100vh;
+   color: #fff;
+}
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  justify-content: space-between;
+}
     .nav-tab {
         margin-top: 15px;
         margin-left: auto;
@@ -75,7 +160,7 @@ body {
     
     .kanten-logo {
         float: right;
-    width: 120px;
+    width: 60px;
     height: auto;
     margin-right: 30px;
     margin-top: 20px;
@@ -144,8 +229,17 @@ font-size: 1em;
     
   }
 
+.buy{
+  padding: 1em;
+}
 
-
+.x{
+  font-size: 3em;
+}
+.carousel{
+  padding-top: 1em;
+  padding: 2em;
+}
   }
 
 

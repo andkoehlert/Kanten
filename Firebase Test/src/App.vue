@@ -162,6 +162,14 @@ class="button is-danger ml-2">
 */
 
 import { RouterLink, RouterView } from 'vue-router';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
+
 // import {ref, onMounted} from 'vue'
 // import { collection, onSnapshot, 
 //   addDoc, doc, deleteDoc, updateDoc,   
@@ -265,11 +273,20 @@ import { RouterLink, RouterView } from 'vue-router';
 
 // }
 
+
+
+
 </script>
 
 
 <style>
 @import 'bulma/css/bulma.min.css';
+@font-face {
+  font-family: "mundial";
+  src: local("mundial"),
+   url(../src/fonts/mundial.otf) format("truetype");
+}
+
 
 
 .badass-todo{

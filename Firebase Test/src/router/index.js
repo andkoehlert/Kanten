@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
+import { Carousel, initTE } from "tw-elements";
+initTE({ Carousel });
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
