@@ -2,22 +2,29 @@
 
 <nav class="navbar" id="myNavbar">
     <div class="nav-tab">
-      <span class="slash">\</span>
+      <ul>
+        <span class="slash">\</span>
         <RouterLink to="/">Home</RouterLink>
         <span class="slash">\</span>
         <RouterLink to="/event">Event</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/merch">Merch</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/gallery">Gallery</RouterLink>
-    <span class="slash">\</span>
+        <span class="slash">\</span>
+        <RouterLink to="/voluenteer">Voluenteer</RouterLink>
+        <span class="slash">\</span>
+        <RouterLink to="/merch">Merch</RouterLink>
+        <span class="slash">\</span>
+        <RouterLink to="/gallery">Gallery</RouterLink>
+        <span class="slash">\</span>
+      </ul>
+        
     </div>
     
-    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+    <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         
-    </a>
+    
     <div class="kanten-logo">
             <img src="../assets/LogoKanten.png" alt="shit">
            </div>
@@ -35,7 +42,6 @@
     }
     .navbar {
       background-color: #333;
-      overflow: hidden;
       justify-content: space-between;
     }
     .nav-tab {
@@ -72,11 +78,19 @@
     margin-top: 20px;
     margin-bottom: 20px;
     }
+    .hamburger {
+    margin-top: 55px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+    .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
     
-    /* CSS styles for the toggle button */
-    .navbar .icon {
-      display: none;
-    }
     @media screen and (max-width: 1000px) {
         .nav-tab {
             margin-left: 0px;
@@ -85,53 +99,24 @@
             scale: 80%;
         }
         .navbar a {
-            margin-left: 11px;
-            padding: 14px 8px;
+            margin-left: 10px;
+            padding: 14px 6.5px;
         }
     }
    
     @media screen and (max-width: 700px) {
-      .navbar a:not(:first-child) {
-        display: none;
-      }
-    
-      .navbar a.icon {
+      .hamburger {
+        display: block;
         float: left;
-        display: block;
-        font-size: 40px;
-        z-index: 0;
       }
-      .slash {
-        display: none;
-      }
-    }
-    @media screen and (max-width: 700px) {
-      .navbar.responsive {
-        position: relative;
-      }
-    
-      .navbar.responsive a.icon {
-        
-        right: 0;
-        top: 0;
-      }
-    
-      .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
+      
     }
   </style>
   
   <script>
-  // JavaScript function to toggle the responsive class on the navigation
-  function toggleNavbar() {
-    var navbar = document.getElementById("myNavbar");
-    if (navbar.className === "navbar") {
-      navbar.className += " responsive";
-    } else {
-      navbar.className = "navbar";
-    }
-  }
-</script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav-tab");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>

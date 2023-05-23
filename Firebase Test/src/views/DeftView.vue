@@ -96,8 +96,8 @@ body {
     }
     
     .navbar a:hover {
-      background-color: #ddd;
-      color: black;
+      color: #d4dbff;
+      text-shadow: 3px 3px #1838a1;
     }
     
     .kanten-logo {
