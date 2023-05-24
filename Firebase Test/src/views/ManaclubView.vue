@@ -189,7 +189,7 @@ The event is FREE, so let's get together and enjoy a good evening of bass togeth
        margin: 0;
        padding: 0;
        font-family: Arial, sans-serif;
-       background-color: #111010;
+       background-color: #333;
      }
      .navbar {
   background-color: #333;

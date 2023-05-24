@@ -182,7 +182,7 @@ S
      margin: 0;
      padding: 0;
      font-family: Arial, sans-serif;
-     background-color: #0f0e0e;
+     background-color: #333;
      margin: 0px;
       min-height: 100vh;
       color: #fff;
