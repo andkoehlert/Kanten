@@ -13,7 +13,7 @@
         <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
       </li>
       <li> 
-        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
+        <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink>
       </li>
       <li>
     <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
@@ -36,7 +36,7 @@
 
       <span class="slash">\</span>
 
-      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+      <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
      
       <span class="slash">\</span>
 

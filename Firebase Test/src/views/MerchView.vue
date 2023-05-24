@@ -15,8 +15,7 @@
       <li>
     <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
   </li>
-      <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
-  </li>
+  <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
   <li> 
     <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
   </li>
@@ -41,7 +40,7 @@
 
       <span class="slash">\</span>
 
-      <li><RouterLink to="/merch" class="hover:text-white"> MERCH</RouterLink></li>
+      <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
 
       <span class="slash">\</span>
 

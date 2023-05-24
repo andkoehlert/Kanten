@@ -18,9 +18,7 @@
   </li>
       <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
   </li>
-  <li> 
-    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
-  </li>
+  <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
       </ul>
     </div>
    
@@ -46,7 +44,7 @@
 
       <span class="slash">\</span>
 
-      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
+      <li> <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink></li>
 
       <span class="slash">\</span>
     </ul>
