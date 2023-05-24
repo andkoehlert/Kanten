@@ -1,26 +1,26 @@
 <template>
- <nav class="navbar" id="myNavbar">
-    <div class="nav-tab">
-      <span class="slash">\</span>
-        <RouterLink to="/">Home</RouterLink>
-        <span class="slash">\</span>
-        <RouterLink to="/event">Event</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/merch">Merch</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/gallery">Gallery</RouterLink>
-    <span class="slash">\</span>
-    </div>
-    
-    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-    </a>
-    <div class="kanten-logo">
-            <img src="../assets/LogoKanten.png" alt="shit">
-           </div>
-</nav>
+  <nav class="navbar" id="myNavbar">
+     <div class="nav-tab">
+       <span class="slash">\</span>
+         <RouterLink to="/">Home</RouterLink>
+         <span class="slash">\</span>
+         <RouterLink to="/event">Event</RouterLink>
+     <span class="slash">\</span>
+     <RouterLink to="/voluenteer">Voluenteer</RouterLink>
+     <span class="slash">\</span>
+     <RouterLink to="/merch">Merch</RouterLink>
+     <span class="slash">\</span>
+     <RouterLink to="/gallery">Gallery</RouterLink>
+     <span class="slash">\</span>
+     </div>
+     
+     <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+         <i class="fa-sharp fa-solid fa-bars"></i>
+     </a>
+     <div class="kanten-logo">
+             <img src="../assets/LogoKanten.png" alt="shit">
+            </div>
+ </nav>
 
 
 
@@ -36,7 +36,7 @@ Badass todo
   
   
   
-  <div class="field is-grouped mb-5 ">
+  <div class="field is-grouped mb-10 ">
   <p class="control is-expanded">
     <input 
     v-model="newTodoContent"
@@ -337,14 +337,144 @@ Firebase
 @import 'bulma/css/bulma.min.css';
 
 
+
+    /* CSS styles for the navigation */
+   
+    .navbar {
+      background-color: #333;
+      justify-content: space-between;
+    }
+    .nav-tab {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slash {
+  font-size: 35px;
+  color: #ffffff;
+  float: left;
+  margin-left: 20px;
+}
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    
+    .navbar a:hover {
+      color: #d4dbff;
+      text-shadow: 3px 3px #1838a1;
+    }
+    
+    .kanten-logo {
+        float: right;
+    width: 120px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .hamburger {
+    margin-top: 55px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+    .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+    
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.title{
+  color: #fff;
+}
+  
 .badass-todo{
   max-width: 400px;
-  padding: 20px;
+  padding: 40px;
   margin: 0 auto;
 }
 
 .line-through{
   text-decoration: line-through;
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+    /* CSS styles for the toggle button */
+    .navbar .icon {
+      display: none;
+    }
+    @media screen and (max-width: 1000px) {
+        .nav-tab {
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+            scale: 80%;
+        }
+        .navbar a {
+            margin-left: 10px;
+            padding: 14px 6.5px;
+        }
+    }
+   
+    @media screen and (max-width: 700px) {
+      .hamburger {
+        display: block;
+        float: left;
+      }
+      
+    }
 
 </style>

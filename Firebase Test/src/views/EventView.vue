@@ -282,7 +282,7 @@
     
     .kanten-logo {
         float: right;
-    width: 120px;
+    width: 60px;
     height: auto;
     margin-right: 30px;
     margin-top: 20px;
