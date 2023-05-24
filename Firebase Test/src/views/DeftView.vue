@@ -192,6 +192,32 @@ The event is FREE, so let's get together and enjoy a good evening of bass togeth
        background-color: #111010;
      }
      
+     .navbar {
+  background-color: #333;
+}
+.btn {
+  background-color: #333;
+  border: none;
+}
+.btn:hover {
+  background-color: #333;
+}
+li {
+  color: white;
+  margin: 0px 10px 0px 10px;
+}
+li:hover {
+  text-shadow: 4px 4px #1838a1;
+}
+.slash {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 2px;
+}
+.menu {
+  background-color: #333;
+}
+ 
      
  .logo{
   color: #111010;

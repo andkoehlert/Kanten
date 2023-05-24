@@ -228,10 +228,7 @@ li:hover {
 padding: 2em 8em;
     }
 
-    .block15 p{
-
-
-    }
+   
 
  
  /* responsive */
