@@ -1,26 +1,59 @@
 <template>
- <nav class="navbar" id="myNavbar">
-    <div class="nav-tab">
-      <span class="slash">\</span>
-        <RouterLink to="/">Home</RouterLink>
-        <span class="slash">\</span>
-        <RouterLink to="/event">Event</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/merch">Merch</RouterLink>
-    <span class="slash">\</span>
-    <RouterLink to="/gallery">Gallery</RouterLink>
-    <span class="slash">\</span>
+ <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-primary lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+        <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
+      </li>
+      <li> 
+        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
+      </li>
+      <li>
+    <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
+  </li>
+      <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
+  </li>
+  <li> 
+    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
+  </li>
+      </ul>
     </div>
-    
-    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-    </a>
-    <div class="kanten-logo">
-            <img src="../assets/LogoKanten.png" alt="shit">
-           </div>
-</nav>
+   
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/" class="hover:text-white">HOME</RouterLink> </li>
+
+      <span class="slash">\</span>
+
+      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+     
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/merch" class="hover:text-white"> MERCH</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
+
+      <span class="slash">\</span>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;"></a>
+  </div>
+</div>
 
 
 <div class="relative h-screen md:flex items-center justify-center justify-around  overflow-hidden">
@@ -129,98 +162,38 @@ body {
 }
 .navbar {
   background-color: #333;
-  overflow: hidden;
-  justify-content: space-between;
 }
-    .nav-tab {
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .slash {
-  font-size: 35px;
-  color: #ffffff;
-  float: left;
-  margin-left: 20px;
+.btn {
+  background-color: #333;
+  border: none;
 }
-    .navbar a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-    
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .kanten-logo {
-        float: right;
-    width: 60px;
-    height: auto;
-    margin-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
+.btn:hover {
+  background-color: #333;
+}
+li {
+  color: white;
+  margin: 0px 10px 0px 10px;
+}
+li:hover {
+  text-shadow: 4px 4px #1838a1;
+}
+.slash {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 2px;
+}
+.menu {
+  background-color: #333;
+}
+
 
     .x {
     font-size: 5em;
     text-shadow: 2px 2px #648af3;
 }
     
-    /* CSS styles for the toggle button */
-    .navbar .icon {
-      display: none;
-    }
 
-    @media screen and (max-width: 1000px) {
-        .nav-tab {
-            margin-left: 0px;
-            margin-right: 0px;
-            float: left;
-            scale: 80%;
-        }
-        .navbar a {
-            margin-left: 11px;
-            padding: 14px 8px;
-        }
-    }
    
-    @media screen and (max-width: 700px) {
-      .navbar a:not(:first-child) {
-        display: none;
-      }
-    
-      .navbar a.icon {
-        float: left;
-        display: block;
-      }
-      .slash {
-        display: none;
-      }
-    }
-    @media screen and (max-width: 700px) {
-      .navbar.responsive {
-        position: relative;
-      }
-    
-      .navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    
-      .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-    }
-
 /* responsive */
 @media screen and (max-width: 600px) {
   

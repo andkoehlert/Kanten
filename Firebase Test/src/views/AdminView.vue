@@ -14,9 +14,7 @@
     <span class="slash">\</span>
     </div>
     
-    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-    </a>
+    
     <div class="kanten-logo">
             <img src="../assets/LogoKanten.png" alt="shit">
            </div>

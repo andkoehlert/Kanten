@@ -4,22 +4,22 @@
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-primary lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
       </li>
       <li> 
-        <RouterLink to="/event">Event</RouterLink>
+        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
       </li>
       <li>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
+    <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
   </li>
-      <li><RouterLink to="/merch">Merch</RouterLink>
+      <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
   </li>
   <li> 
-    <RouterLink to="/gallery">Gallery</RouterLink>
+    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
   </li>
       </ul>
     </div>
@@ -28,23 +28,27 @@
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
 
-      <li>
-        <span class="slash">\</span>
-        <RouterLink to="/">Home</RouterLink>
-      </li>
-      <li> <span class="slash">\</span>
-        <RouterLink to="/event">Event</RouterLink>
-      </li>
-      <li><span class="slash">\</span>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
-    <span class="slash">\</span>
-  </li>
-      <li><RouterLink to="/merch">Merch</RouterLink>
-    <span class="slash">\</span>
-  </li>
-  <li> <RouterLink to="/gallery">Gallery</RouterLink>
-    <span class="slash">\</span>
-  </li>
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/" class="hover:text-white">HOME</RouterLink> </li>
+
+      <span class="slash">\</span>
+
+      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+     
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/merch" class="hover:text-white"> MERCH</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
+
+      <span class="slash">\</span>
     </ul>
   </div>
   <div class="navbar-end">
@@ -72,10 +76,15 @@
 }
 li {
   color: white;
+  margin: 0px 10px 0px 10px;
 }
 li:hover {
-  color: #d4dbff;
-  text-shadow: 3px 3px #1838a1;
+  text-shadow: 4px 4px #1838a1;
+}
+.slash {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 2px;
 }
 .menu {
   background-color: #333;
