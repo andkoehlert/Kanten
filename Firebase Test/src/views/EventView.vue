@@ -309,6 +309,7 @@ li:hover {
   background-color: #333;
 }
 
+
     .x{
     font-size: 5em;
   text-shadow: 2px 2px #648af3;

@@ -57,8 +57,9 @@
 
 
 <div class="relative h-screen md:flex items-center justify-center justify-around  overflow-hidden">
-  
-  <div class="carousel flex justify-around">
+  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure>
+    <div class="carousel flex justify-around">
     
     <div class="carousel rounded-box w-96">
   <div class="carousel-item w-1/2">
@@ -85,32 +86,41 @@
 </div>
 </div>
   
+  </figure>
+  <div class="card-body text-white bg-black">
+    <h2 class="card-title text-white ">OUR HOODIE</h2>
+    <p class="text-xs">SHOW SOME LOVE FOR YOUR FORVOURITE EVENT</p>
+    <div class="card-actions justify-end">
+    </div>
+  </div>
+</div>
+ 
 
 
 <div class="buy grid justify-around py-40">
   <h1 class="x flex">
     KANTEN - HOODIE
   </h1>
-  <p class="">
-    100 DKK
+  <p class="py-2">
+    100 DKK,-
   </p>
   <div class="flex gap-6">
   
-  <p class="">  
+  <p class="cursor-pointer	">  
     XL
-    <p>
+    <p class="cursor-pointer	">
     L
     </p>
-<p>
+<p class="cursor-pointer	">
 M
 </p>
-<p>
+<p class="cursor-pointer	">
 S
 </p>
   </p>
   </div>
 
-  <div class=" gap-4 flex">
+  <div class=" gap-4 flex py-2">
         <button class="w-5 h-5 rounded-full 
                        bg-blue-500 ">
             
