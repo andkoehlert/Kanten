@@ -122,11 +122,10 @@
     autoplay
     loop
     muted
-    class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-  >
+    class="video absolute z-10 w-auto"
+  > 
     <source
-      src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
-      type="video/mp4"
+      src="../assets/4k.mp4"
     />
   </video>
 </header>
@@ -188,7 +187,22 @@ body {
 }
 
 
-/* responsive */
+/* medieQ*/
+@media screen and (max-width: 1200px) {
+  
+  .logo{
+
+}
+
+  .video{
+  max-width: none;
+  }
+
+  }
+
+  
+
+
 @media screen and (max-width: 600px) {
   
   .logo{
@@ -205,6 +219,9 @@ padding-left: 2.7em;
 
   }
 
+  .video{
+  max-width: none;
+  }
 
   }
 
