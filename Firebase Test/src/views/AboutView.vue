@@ -4,22 +4,22 @@
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-primary lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
       </li>
       <li> 
-        <RouterLink to="/event">Event</RouterLink>
+        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
       </li>
       <li>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
+    <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
   </li>
-      <li><RouterLink to="/merch">Merch</RouterLink>
+      <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
   </li>
   <li> 
-    <RouterLink to="/gallery">Gallery</RouterLink>
+    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
   </li>
       </ul>
     </div>
@@ -28,23 +28,27 @@
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
 
-      <li>
-        <span class="slash">\</span>
-        <RouterLink to="/">Home</RouterLink>
-      </li>
-      <li> <span class="slash">\</span>
-        <RouterLink to="/event">Event</RouterLink>
-      </li>
-      <li><span class="slash">\</span>
-    <RouterLink to="/voluenteer">Voluenteer</RouterLink>
-    <span class="slash">\</span>
-  </li>
-      <li><RouterLink to="/merch">Merch</RouterLink>
-    <span class="slash">\</span>
-  </li>
-  <li> <RouterLink to="/gallery">Gallery</RouterLink>
-    <span class="slash">\</span>
-  </li>
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/" class="hover:text-white">HOME</RouterLink> </li>
+
+      <span class="slash">\</span>
+
+      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+     
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li><RouterLink to="/merch" class="hover:text-white"> MERCH</RouterLink></li>
+
+      <span class="slash">\</span>
+
+      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
+
+      <span class="slash">\</span>
     </ul>
   </div>
   <div class="navbar-end">
@@ -52,7 +56,74 @@
   </div>
 </div>
 
+<div class="flex justify-center mt-10 lg:justify-start lg:mt-6 lg:ms-20">
+  <div class="flex-none ...">
+    <h1 class="aboutHeader">
+      ABOUT US
+    </h1>
+  </div>
+  
+</div>
 
+<div class=" flex flex-col lg:grid lg:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 ...  mt-10 h-auto">
+    <div class="col-span-2 ms-10 me-10  lg:ms-20">
+      <div class="box-content h-auto w-auto p-4 border-0 ..." style="background-color: #707070;">
+    <h1 class="aboutTitle">
+      WHO ARE WE?
+    </h1>
+    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
+      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
+      ptate quaerat molestiae maiores temporibus, ab praesentium eve
+      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
+      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+
+    <h1 class="aboutTitle rightalign">
+      OUR LOCAL DJS
+    </h1>
+    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
+      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
+      ptate quaerat molestiae maiores temporibus, ab praesentium eve
+      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
+      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+  </div>
+    </div>
+    
+    <div class="me-10 ms-10 lg:me-20 lg:ms-10">
+      <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
+        <h1 class="newsletterTitle w-64 me-auto ms-auto mt-10 lg:mt-0">
+          SIGN UP FOR OUR NEWSLETTER
+        </h1>
+        <form class="newsletterForm  ms-4 me-4 sm:ms-32 sm:me-32 lg:ms-auto lg:me-auto mt-8 border-2 xl:p-4 p-auto  flex flex-col justify-center">
+          
+
+        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="First Name" required>
+        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="Last Name" required>
+        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="E-mail" required>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
+        focus:ring-blue-300 font-medium rounded-3xl text-sm w-32 xl:w-56 2xl:w-64 me-auto ms-auto mt-10 mb-10 p-3  text-center dark:bg-blue-600 
+        dark:hover:bg-blue-700 dark:focus:ring-blue-800">SIGN IN</button>
+        </form>
+
+      </div>
+    </div>
+  
+</div>
+
+<div class="flex justify-center mt-20">
+  <div>
+    <a href="#" class="me-20 ms-20"><img src="../assets/instagram-icon.png" alt="instagram"></a>
+  </div>
+  <div>
+    <a href="#" class="me-20 ms-20"><img src="../assets/discord-icon.png" alt="discord"></a>
+  </div>
+  <div> <a href="#" class="me-20 ms-20"><img src="../assets/facebook-icon.png" alt="facebook"></a></div>
+</div>
+
+<div class="flex justify-center me-6 mt-5 pb-20">
+  <a href="#" class="mailKanten"> kanten@gmail.com </a>
+</div>
 
 
 
@@ -60,6 +131,9 @@
 
 
 <style>
+body {
+  background-color: #333 ;
+}
 .navbar {
   background-color: #333;
 }
@@ -72,16 +146,64 @@
 }
 li {
   color: white;
+  margin: 0px 10px 0px 10px;
 }
 li:hover {
-  color: #d4dbff;
-  text-shadow: 3px 3px #1838a1;
+  text-shadow: 4px 4px #1838a1;
+}
+.slash {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 2px;
 }
 .menu {
   background-color: #333;
 }
-
-   
+.aboutHeader {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 4px 4px #1838a1;
+}
+.aboutTitle {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 40px;
+}  
+.rightalign {
+  text-align: end;
+}
+.aboutParagraph {
+  font-size: 18px;
+  margin: 40px;
+  color: #fff;
+  text-align: justify;
+}
+.newsletterTitle {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+.mailKanten {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.mailKanten:hover {
+  color: #c7c7c7;
+}
+@media screen and (max-width:650px) {
+  .aboutTitle {
+    text-align: center;
+    font-size: 20px;
+  }
+  .aboutTitle .rightalign {
+    text-align: center;
+  }
+  .aboutParagraph {
+    font-size: 12px;
+  }
+}
   </style>
   
   <script>
