@@ -67,7 +67,7 @@
 
 <div class=" flex flex-col lg:grid lg:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 ...  mt-10 h-auto">
     <div class="col-span-2 ms-10 me-10  lg:ms-20">
-      <div class="box-content h-auto w-auto p-4 border-0 ..." style="background-color: #707070;">
+      <div class="box-content h-auto w-auto p-4 border-0 drop-shadow-xl" style="background-color: #707070;">
     <h1 class="aboutTitle">
       WHO ARE WE?
     </h1>
@@ -92,14 +92,14 @@
     
     <div class="me-10 ms-10 lg:me-20 lg:ms-10">
       <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
-        <h1 class="newsletterTitle w-64 me-auto ms-auto mt-10 lg:mt-0">
+        <h1 class="newsletterTitle w-64 me-auto ms-auto mt-10 lg:mt-0 animate-pulse">
           SIGN UP FOR OUR NEWSLETTER
         </h1>
-        <form class="newsletterForm  ms-4 me-4 sm:ms-32 sm:me-32 lg:ms-auto lg:me-auto mt-8 border-2 xl:p-4 p-auto  flex flex-col justify-center">
+        <form style="border-color: #ffffff55;" class="newsletterForm  ms-4 me-4 sm:ms-32 sm:me-32 lg:ms-auto lg:me-auto mt-8 border-2 xl:p-4 p-auto  flex flex-col justify-center ">
           
 
-        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="First Name" required>
-        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="Last Name" required>
+        <input type="text" id="email" class="m-4 rounded-2xl p-3" placeholder="First Name" required>
+        <input type="text" id="email" class="m-4 rounded-2xl p-3" placeholder="Last Name" required>
         <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="E-mail" required>
         <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
         focus:ring-blue-300 font-medium rounded-3xl text-sm w-32 xl:w-56 2xl:w-64 me-auto ms-auto mt-10 mb-10 p-3  text-center dark:bg-blue-600 
@@ -113,15 +113,15 @@
 
 <div class="flex justify-center mt-20">
   <div>
-    <a href="#" class="me-20 ms-20"><img src="../assets/instagram-icon.png" alt="instagram"></a>
+    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
   </div>
   <div>
-    <a href="#" class="me-20 ms-20"><img src="../assets/discord-icon.png" alt="discord"></a>
+    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
   </div>
-  <div> <a href="#" class="me-20 ms-20"><img src="../assets/facebook-icon.png" alt="facebook"></a></div>
+  <div> <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
 
-<div class="flex justify-center me-6 mt-5 pb-20">
+<div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
   <a href="#" class="mailKanten"> kanten@gmail.com </a>
 </div>
 
