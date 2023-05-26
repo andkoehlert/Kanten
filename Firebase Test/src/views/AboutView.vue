@@ -1,5 +1,7 @@
 <template> 
 <link rel="stylesheet" href="https://use.typekit.net/rlp2nwr.css">
+<div class="background">
+
 
 <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -141,32 +143,34 @@
   <a href="#" class="mailKanten"> kanten@gmail.com </a>
 </div>
 
-
+</div>
 
   </template>
 
 
-<style>
+<style scoped>
 @font-face {
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
 }
- 
-body {
-  background-color: #333 ;
+.background{
+  background-image: url("../assets/KANTENFOND.png");
 }
+
+
 .navbar {
-  background-color: #333;
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
   font-family: MadeOkine;
@@ -181,7 +185,7 @@ li:hover {
   font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
 }
 .aboutHeader {
   color: #fff;
@@ -195,6 +199,7 @@ li:hover {
   color: #fff;
   margin: 20px 40px;
   font-family: MadeOkine;
+  
 }  
 .rightalign {
   text-align: end;

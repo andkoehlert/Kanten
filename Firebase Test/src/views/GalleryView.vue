@@ -62,37 +62,26 @@
 
 <!-- HEADING--> 
 
-<div class="flex justify-start gap-5 h-40 ps-20 text-white mt-6">
-  <div>
-    <h1 class="
-    text-7xl font-bold transition cursor-pointer
-     duration-150 border-b-8  
-     border-purple-500">Gallery</h1>
+<div class="flex justify-center mt-10 lg:justify-start lg:mt-6 lg:ms-20">
+  <div class="flex-none ...">
+    <h1 class="aboutHeader">
+      GALLERY
+    </h1>
   </div>
   
 </div>
 
 <!-- Filter-->
 
-<div class="gallery_h2 flex justify-start gap-10 h-56 ps-20 text-white">
+<div class="gallery_h2 flex justify-start  gap-10 h-10 ms-20 text-white mb-5 mt-20">
   <div>
-    <p class="
-    text-5xl font-bold transition cursor-pointer
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500">
-All</p>
+    <p class=" filterGallery cursor-pointer" >ALL</p>
   </div>
   <div>
-    <p class="
-    text-5xl font-bold transition cursor-pointer
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500">Photos</p>
+    <p class="filterGallery cursor-pointer" >PHOTOS</p>
   </div>
   <div>
-    <p class="
-    text-5xl font-bold transition cursor-pointer
-     duration-150 border-b-8 border-transparent 
-     hover:border-purple-500">Videos</p>
+    <p class="filterGallery cursor-pointer" >VIDEOS</p>
   </div>
 </div>
 
@@ -100,7 +89,7 @@ All</p>
 <!-- Photo Grid-->
 
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
     <div>
         <img 
         class="h-auto max-w-full rounded-lg 
@@ -193,30 +182,32 @@ All</p>
 </template>
 
 
-<style>
+<style scoped>
+@font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
+}
 .background{
   background-image: url("../assets/KANTENFOND.png");
 }
 
-body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #333;
-    }
+
 .navbar {
-  background-color: #333;
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -225,15 +216,49 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
+}
+.aboutHeader {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
+}
+.aboutTitle {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 40px;
+  font-family: MadeOkine;
+}  
+.mailKanten {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.mailKanten:hover {
+  color: #c7c7c7;
+}
+
+.filterGallery {
+font-size: 30px;
+color: #fff;
+font-family: MadeOkine;
+}
+.filterGallery:hover {
+  border-bottom: 4px solid #1838a1;
+}
+.active {
+  border-bottom: 4px solid #1838a1;
 }
 
 /* responsive */
 @media screen and (max-width: 600px) {
   
-  .gallery_h2 p{
+  .filterGallery p{
 font-size: 1em;
     
   }
@@ -248,13 +273,5 @@ font-size: 1em;
 </style>
   
 <script>
-// JavaScript function to toggle the responsive class on the navigation
-function toggleNavbar() {
-  var navbar = document.getElementById("myNavbar");
-  if (navbar.className === "navbar") {
-    navbar.className += " responsive";
-  } else {
-    navbar.className = "navbar";
-  }
-}
+
 </script>

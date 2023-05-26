@@ -119,24 +119,20 @@
 
 @import 'bulma/css/bulma.min.css';
 
+@font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: MadeOkine;
   margin: 0px;
    min-height: 10vh;
 }
-.social-icons{
-    
-}
 
-.social-icons img{
-    
-}
-
-#myVideo {
-
-}
 
 /* Add some content at the bottom of the video/page */
 .content {
@@ -164,15 +160,12 @@ body {
   color: white;
 }
 
-.line_1{
-}
+
 
 /* medieQ*/
 @media screen and (max-width: 1200px) {
   
-  .logo{
-
-}
+ 
 
   .video{
   max-width: none;
@@ -185,9 +178,7 @@ body {
 
 @media screen and (max-width: 600px) {
   
-  .logo{
-
-  }
+  
 
   .line_1{
   width: 250px;

@@ -191,19 +191,29 @@ S
       min-height: 100vh;
       color: #fff;
    }
-   .navbar {
-  background-color: #333;
+   @font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
+}
+
+
+
+.navbar {
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -212,9 +222,16 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
+}
+.aboutHeader {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
 }
        .x {
        font-size: 5em;

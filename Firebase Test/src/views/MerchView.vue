@@ -69,7 +69,7 @@
 <div class="Merch_box w-full">
 
 
-<div class="justify-center flex flex-col lg:flex-row lg:flex gap-10">
+<div class="justify-center flex flex-col md:flex-row md:flex gap-10">
   <div>
     <div class="  me-auto ms-auto max-w-xs  p-4  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
@@ -114,8 +114,8 @@
 </div>
 
 </div>
-</div>
 
+</div>
 </div>
 
 <div class="flex justify-center mt-20">
@@ -133,12 +133,12 @@
 </div>
 
 
-
+</div>
 
 
   </template>
 
-<style>
+<style scoped>
 /* CSS styles for the navigation */
 
 
@@ -146,27 +146,27 @@
   background-image: url("../assets/KANTENFOND.png");
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #333;
-  margin: 0px;
-   min-height: 100vh;
+@font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
 }
+
 .navbar {
-  background-color: #333;
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -175,11 +175,25 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
 }
-
+.aboutHeader {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
+}
+.mailKanten {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.mailKanten:hover {
+  color: #c7c7c7;
+}
 
 .x{
 font-size: 5em;

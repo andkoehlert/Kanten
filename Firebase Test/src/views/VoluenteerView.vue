@@ -1,4 +1,6 @@
 <template>
+<div class="background">
+
 
 <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -64,7 +66,7 @@
 
 <div class=" flex flex-col lg:grid lg:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 ...  mt-10 h-auto">
     <div class="col-span-2 ms-10 me-10  lg:ms-20">
-      <div class="box-content h-auto w-auto p-4 border-0 drop-shadow-xl" style="background-color: #707070;">
+      <div class="box-content h-auto w-auto p-4 border-0 drop-shadow-xl" style="background-color: #70707066;">
     <h1 class="aboutTitle">
       WANT TO JOIN US?
     </h1>
@@ -135,35 +137,36 @@
   <a href="#" class="mailKanten"> kanten@gmail.com </a>
 </div>
 
-
+</div>
   </template>
-  <style>
+  <style scoped>
+
+
 @font-face {
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
 }
+.background{
+  background-image: url("../assets/KANTENFOND.png");
+}
 
-
-body {
-       margin: 0;
-       padding: 0;
-       background-color: #333;
-     }
 
 .navbar {
-  background-color: #333;
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -172,9 +175,61 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
+}
+.aboutHeader {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
+}
+.aboutTitle {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 40px;
+  font-family: MadeOkine;
+}  
+.rightalign {
+  text-align: end;
+}
+.aboutParagraph {
+  font-size: 18px;
+  margin: 40px;
+  color: #fff;
+  text-align: justify;
+  font-family: "mundial", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.newsletterTitle {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-family: MadeOkine;
+}
+.mailKanten {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.mailKanten:hover {
+  color: #c7c7c7;
+}
+@media screen and (max-width:650px) {
+  .aboutTitle {
+    text-align: center;
+    font-size: 20px;
+  }
+  .aboutTitle .rightalign {
+    text-align: center;
+  }
+  .aboutParagraph {
+    font-size: 12px;
+  }
 }
 
 </style>

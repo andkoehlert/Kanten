@@ -12,7 +12,7 @@
         <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
       </li>
       <li> 
-        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
+        <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink>
       </li>
       <li>
     <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
@@ -35,7 +35,7 @@
 
       <span class="slash">\</span>
 
-      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+      <li>  <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink> </li>
      
       <span class="slash">\</span>
 
@@ -58,13 +58,12 @@
 </div>
 
  
-     <div class="col-start-2 m-20">
-       <h1 class="text-2xl  text-white text-2xl font-bold border-b-8  
-      border-blue-900">EVENT</h1>
+     <div class="col-start-2 m-20 borderEvent">
+       <RouterLink to="/event" class="pb-1 eventBack">EVENTS</RouterLink>
      </div>
-     <div class="flex justify-center ...">
+     <div class="flex justify-center">
        <div>
-         <h2 class="x text-white py-4 ">
+         <h2 class=" mt-0 eventHeader">
            DEFT
          </h2>
        </div>
@@ -79,8 +78,8 @@
      <img src="../assets/LogoKanten.png">
    </div>
     --> 
-    <div class="block flex justify-center py-4 md:px-40">
-<h1 class="text-white">PAST EVENTS</h1>
+    <div class="block flex justify-start py-4 md:px-40">
+<h1 class="eventTitles">PAST EVENTS</h1>
 
 </div>
 <div class="block1 block flex justify-center px-40     ">
@@ -121,8 +120,8 @@ The event is FREE, so let's get together and enjoy a good evening of bass togeth
 
 
 
-<div class=" block flex justify-center py-4 sm:px-40">
-<h1 class="text-white">UPCOMING EVENTS</h1>
+<div class=" block flex justify-end py-4 sm:px-40">
+<h1 class="eventTitles">UPCOMING EVENTS</h1>
 
 </div>
 <div class="block1 block flex justify-center     ">
@@ -188,31 +187,33 @@ Follow us on Instagram and Facebook for future updates!
      
      </template>
  
- <style>
+ <style scoped>
  
- .background{
+ @font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
+}
+.background{
   background-image: url("../assets/KANTENFOND.png");
 }
- body {
-       margin: 0;
-       padding: 0;
-       font-family: Arial, sans-serif;
-       background-color: #333;
-     }
-     
-     .navbar {
-  background-color: #333;
+
+
+.navbar {
+  background-color: #33333300;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #33333300;
 }
 li {
+  background-color: #33333300;
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -221,20 +222,35 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
-  background-color: #333;
+  background-color: #33333300;
 }
- 
-     
+.eventHeader {
+  color: #fff;
+  font-size: 90px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
+}
+.eventBack {
+  font-size: 30px;
+  color: #fff;
+  font-family: MadeOkine;
+  text-shadow: 4px 4px #1838a1;
+}
+.borderEvent {
+border-bottom: 4px solid #1838a1;
+}  
  .logo{
   color: #111010;
  }
  
-     .x {
-     font-size: 5em;
-     text-shadow: 2px 2px #648af3;
- }
+ .eventTitles {
+  color: #fff; 
+  font-family: MadeOkine;
+  font-size: 25px;
+ }  
     
  
  
