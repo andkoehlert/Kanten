@@ -61,7 +61,7 @@
 
 <div class=" justify-center md:flex gap-10">
   <div>
-    <div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
@@ -81,7 +81,7 @@
 </div>
 </div>
   <div>
-<div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
@@ -103,7 +103,7 @@
 </div>
 <div class=" justify-center md:flex gap-10">
   <div>
-    <div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
@@ -125,7 +125,7 @@
 </div>
 </div>
   <div>
-<div class="max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >

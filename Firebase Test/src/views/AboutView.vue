@@ -1,4 +1,5 @@
 <template> 
+<link rel="stylesheet" href="https://use.typekit.net/rlp2nwr.css">
 
 <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -108,6 +109,21 @@
 
       </div>
     </div>
+
+    <div class="col-span-3 mt-20 sm:me-28 me-0">
+      <h1 class="locationtag">
+        FIND US HERE 
+      </h1>
+    </div>
+
+    <div class="col-span-3">
+      <div class="relative w-full h-96 mt-10">
+    <iframe class="absolute top-0 left-0 w-full h-full"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10417.211223456492!2d8.450884727933229!3d55.46840642455781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b863b9f21%3A0xda996a903b7c0df7!2sFinsensgade%201%2C%206700%20Esbjerg!5e0!3m2!1sen!2sdk!4v1685091990244!5m2!1sen!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+</div>
+    </div>
   
 </div>
 
@@ -131,6 +147,12 @@
 
 
 <style>
+@font-face {
+  font-family: 'MadeOkine';
+  src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
+  
+}
+ 
 body {
   background-color: #333 ;
 }
@@ -147,6 +169,7 @@ body {
 li {
   color: white;
   margin: 0px 10px 0px 10px;
+  font-family: MadeOkine;
 }
 li:hover {
   text-shadow: 4px 4px #1838a1;
@@ -155,6 +178,7 @@ li:hover {
   font-size: 30px;
   color: #fff;
   margin-top: 2px;
+  font-family: MadeOkine;
 }
 .menu {
   background-color: #333;
@@ -163,12 +187,14 @@ li:hover {
   color: #fff;
   font-size: 50px;
   text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
 }
 .aboutTitle {
   font-weight: 600;
   font-size: 30px;
   color: #fff;
   margin: 20px 40px;
+  font-family: MadeOkine;
 }  
 .rightalign {
   text-align: end;
@@ -178,11 +204,15 @@ li:hover {
   margin: 40px;
   color: #fff;
   text-align: justify;
+  font-family: "mundial", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 .newsletterTitle {
   text-align: center;
   color: #fff;
   font-size: 25px;
+  font-family: MadeOkine;
 }
 .mailKanten {
   font-size: 25px;
@@ -191,6 +221,14 @@ li:hover {
 }
 .mailKanten:hover {
   color: #c7c7c7;
+}
+.locationtag {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: end;
+  color: #fff;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
 }
 @media screen and (max-width:650px) {
   .aboutTitle {
@@ -202,6 +240,10 @@ li:hover {
   }
   .aboutParagraph {
     font-size: 12px;
+  }
+  .locationtag {
+    text-align: center;
+    font-size: 35 px;
   }
 }
   </style>

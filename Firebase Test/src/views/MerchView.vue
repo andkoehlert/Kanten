@@ -64,14 +64,14 @@
 </div>
 
 
-<div class="Merch_box">
+<div class="Merch_box w-full">
 
 
-<div class="justify-center md:flex gap-10 ">
+<div class="justify-center flex flex-col lg:flex-row lg:flex gap-10">
   <div>
-    <div class="max-w-xs  p-4 mx-6 mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="  me-auto ms-auto max-w-xs  p-4  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
-  class="justify-center items-center	"
+  class="justify-center items-center"
   >
         <img class="object-contain h-60 w-96 event_logo justify-center items-center	" src="../assets/Cap.webp" 
         
@@ -89,7 +89,7 @@
 </div>
 </div>
 <div>
-    <div class="max-w-xs p-4 mx-6 mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
@@ -109,7 +109,7 @@
 </div>
 </div>
   <div>
-<div class="max-w-xs p-4 mx-6 mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
@@ -149,9 +149,7 @@
 </div>
 
 
-<div>
-  
-</div>
+
   </template>
 
 <style>
