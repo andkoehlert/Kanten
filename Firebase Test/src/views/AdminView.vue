@@ -62,8 +62,7 @@
   <div class="badass-todo">
 
 <div class="title has-text-centered">
-Badass todo
-</div>
+ADD EVENT</div>
 
 <form @submit.prevent="addTodo">
   
@@ -129,8 +128,8 @@ Badass todo
 
 <div 
 v-for="todo in todos"
-class="card mb-5" 
-:class="{'has-background-success-light' : todo.done}"
+class="card mb-5 " 
+:class="{'has-background-success-light ' : todo.done}"
 
 >
   <div class="card-content">
@@ -142,7 +141,7 @@ class="card mb-5"
   todo.done}"
   
   >
-  <img :src="todo.imgURL" alt="">SSS
+  <img :src="todo.imgURL" alt="">
   <p>
   {{ todo.content }}    
 
@@ -168,7 +167,7 @@ class="card mb-5"
 
 
   </div>
-  <div class="column is-5 has-text-right">
+  <div class="column  ">
     <button 
     @click="toggleDone(todo.id)"
     class="button"
@@ -370,7 +369,7 @@ Firebase
 </script>
 
 
-<style>
+<style scoped>
 @import 'bulma/css/bulma.min.css';
 
 
@@ -462,5 +461,9 @@ li:hover {
 .show {display:block;}
 
 
+
+.card-content{
+  height: 500px;
+}
    
 </style>

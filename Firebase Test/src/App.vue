@@ -164,10 +164,15 @@ class="button is-danger ml-2">
 
 <script setup>
 
-import { onMounted, ref } from 'vue';
 import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+import { onMounted, ref } from 'vue';
+
 const isLogedIn = ref(false);
 
+
+/*
+
+Addtodo doesn't work with this:
 
 let auth;
 onMounted(() => {
@@ -186,11 +191,12 @@ signOut(auth).then(()=>{
   router.push("/");
 })
 };
-
+*/
 /* imports
 */
 
 import { RouterLink, RouterView } from 'vue-router';
+
 import { initFlowbite } from 'flowbite'
 import router from './router';
 
@@ -319,8 +325,8 @@ onMounted(() => {
 
 
 .badass-todo{
-  max-width: 400px;
-  padding: 20px;
+  max-width: 1000px;
+  padding: 100px;
   margin: 0 auto;
 }
 
