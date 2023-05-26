@@ -1,4 +1,5 @@
 <template>
+      <div class="background">
 
 <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -50,7 +51,10 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;"></a>
+    <a  class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;">
+    
+    </a>
+
   </div>
 </div>
 
@@ -239,12 +243,14 @@ All</p>
 
 
 
-
+      </div>
 </template>
 
 
 <style>
-
+.background{
+  background-image: url("../assets/KANTENFOND.png");
+}
 
 body {
       margin: 0;
