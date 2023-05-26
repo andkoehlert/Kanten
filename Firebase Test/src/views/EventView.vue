@@ -69,55 +69,63 @@
   
 </div>
 
-<div class=" justify-center md:flex gap-10">
+
+<div class="xl:flex xl:justify-center">
+
+<!--BOX ONE CONTAINING TWO EVENTS-->
+
+  <div class=" justify-center lg:flex gap-10">
   <div>
-    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg  mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/DeftLogo.png" 
+        <img class="event_logo h-48 w-48  me-auto ms-auto	" src="../assets/DeftLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">DEFT</h1>
+    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">DEFT</h1>
     <RouterLink to="/deft"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
   
 </div>
 </div>
   <div>
-<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/VertexLogo.png" 
+        <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/VertexLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">VERTEX</h1>
+    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">VERTEX</h1>
     <RouterLink to="/vertex"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
 
 </div>
 </div>
 </div>
-<div class=" justify-center md:flex gap-10">
+
+<!--BOX TWO CAONTAINING TWO EVENTS-->
+
+<div class=" justify-center lg:flex gap-10">
   <div>
-    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-  <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/XLogo.png" 
+  <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/XLogo.png" 
         
         alt="" 
         
@@ -125,9 +133,9 @@
         />
     </a>
     
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">X-MASSIVE-DUB</h1>
+    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">X-MASSIVE-DUB</h1>
       <RouterLink to="/xmassive"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
 
@@ -135,26 +143,30 @@
 </div>
 </div>
   <div>
-<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/ManaLogo.png" 
+        <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/ManaLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">MANA CLUB</h1>
+    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">MANA CLUB</h1>
     <RouterLink to="/manaclub"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
     
 </div>
 </div>
 </div>
+</div>
+
+
+
 
 
 
@@ -242,24 +254,14 @@ li:hover {
   color: #c7c7c7;
 }
 
-    .x{
-    font-size: 5em;
-  text-shadow: 2px 2px #648af3;
-
-    }
-
+.eventName {
+  font-family: "mundial", sans-serif;
+}
 
 
        
-   /* responsive */
-   @media screen and (max-width: 600px) {
-     
-  .event_logo{
-  padding-left: 3em;
-  }
-
-
-     }
+  
+  
    
    
     

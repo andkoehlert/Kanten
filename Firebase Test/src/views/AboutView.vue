@@ -70,7 +70,7 @@
 
 <div class=" flex flex-col lg:grid lg:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 ...  mt-10 h-auto">
     <div class="col-span-2 ms-10 me-10  lg:ms-20">
-      <div class="box-content h-auto w-auto p-4 border-0 drop-shadow-xl" style="background-color: #707070;">
+      <div class="box-content h-auto w-auto p-4 border-0 drop-shadow-xl" style="background-color: #70707066;">
     <h1 class="aboutTitle">
       WHO ARE WE?
     </h1>

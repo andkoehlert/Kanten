@@ -169,7 +169,7 @@ S
    
    </script>
    
-   <style>
+   <style scoped>
    .background{
   background-image: url("../assets/KANTENFOND.png");
 }
