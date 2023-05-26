@@ -111,7 +111,7 @@
       </h1>
 
       <div class="me-auto ms-auto mt-10">
-    <a href="#" ><img src="../assets/linkedin (2).png" alt="linkedin" class="animate-bounce"></a>
+    <a href="#" ><img src="../assets/linkedin2.png" alt="linkedin" class="animate-bounce"></a>
   </div>
 
 

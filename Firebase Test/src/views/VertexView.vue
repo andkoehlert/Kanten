@@ -188,7 +188,7 @@ Follow us on Instagram and Facebook for future updates!
 
     </template>
 
-<style>
+<style scoped>
 
 .background{
   background-image: url("../assets/KANTENFOND.png");
