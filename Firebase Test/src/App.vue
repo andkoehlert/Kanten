@@ -1,6 +1,8 @@
 <template>
   <div>
-  <nav class="nav">
+ <!-- 
+
+<nav class="nav">
         <RouterLink to="/">/Home</RouterLink>
         <RouterLink to="/admin">/Admin</RouterLink>
         <RouterLink to="/about">/About</RouterLink>
@@ -13,11 +15,15 @@
         <RouterLink to="/manaclub">/Manaclub</RouterLink>
         <RouterLink to="/vertex">/vertex</RouterLink>
         <RouterLink to="/hoodie">/hoodie</RouterLink>
+        <RouterLink to="/signin">/hoodie</RouterLink>
 
 
       </nav>
-  
 
+
+ --> 
+  
+<RouterView-view />
       <div class="body-content">
         <RouterView />
       </div>
@@ -158,12 +164,35 @@ class="button is-danger ml-2">
 
 <script setup>
 
+import { onMounted, ref } from 'vue';
+import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+const isLogedIn = ref(false);
+
+
+let auth;
+onMounted(() => {
+auth = getAuth();
+onAuthStateChanged(auth, (user) =>{
+  if (user) {
+    isLoggedIn.value = true;
+  } else {
+    isLoggedIn.value = false;
+  }
+})
+});
+
+const handleSignOut = () => {
+signOut(auth).then(()=>{
+  router.push("/");
+})
+};
+
 /* imports
 */
 
 import { RouterLink, RouterView } from 'vue-router';
-import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
+import router from './router';
 
 // initialize components based on data attribute selectors
 onMounted(() => {

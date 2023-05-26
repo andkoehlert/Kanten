@@ -1,4 +1,6 @@
 <template>
+        <div class="background">
+
  <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
@@ -88,26 +90,8 @@
   
 </div>
 </div>
-<div>
-    <div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
-  <a href="#"
-  class="justify-center items-center	"
-  >
-        <img class="object-contain h-60 w-96  event_logo justify-center items-center	" src="../assets/Cap.webp" 
-        
-        alt="" 
-        
-        
-        />
-    </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">HOODIE: 100kr</h1>
-    <RouterLink to="/hoodie"
-      class="inline-flex items-center px-3 py-2 text-sm  font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
-      
-      >Buy</RouterLink>
-  
-</div>
-</div>
+
+
   <div>
 <div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
   <a href="#"
@@ -150,13 +134,17 @@
 
 
 
+
+
   </template>
 
 <style>
 /* CSS styles for the navigation */
 
 
-
+.background{
+  background-image: url("../assets/KANTENFOND.png");
+}
 
 body {
   margin: 0;

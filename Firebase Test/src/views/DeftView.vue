@@ -1,4 +1,6 @@
 <template>
+        <div class="background">
+
   <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
@@ -58,24 +60,27 @@
  
      <div class="col-start-2 m-20">
        <h1 class="text-2xl  text-white text-2xl font-bold border-b-8  
-      border-yellow-800">EVENT</h1>
+      border-blue-900">EVENT</h1>
      </div>
      <div class="flex justify-center ...">
        <div>
-         <h2 class="x text-white ">
+         <h2 class="x text-white py-4 ">
            DEFT
          </h2>
        </div>
        
      </div>
-    
+     <div class="flex justify-center py-4">
+  <img class="logo w-48 h-48" src="../assets/DeftLogo.png" alt="">
+
+</div>
     <!-- 
      <div class="flex  w-full justify-center items-center">
      <img src="../assets/LogoKanten.png">
    </div>
     --> 
-    <div class="block flex justify-center  md:px-40">
-<h1 class="text-white">UPCOMING EVENTS</h1>
+    <div class="block flex justify-center py-4 md:px-40">
+<h1 class="text-white">PAST EVENTS</h1>
 
 </div>
 <div class="block1 block flex justify-center px-40     ">
@@ -116,15 +121,15 @@ The event is FREE, so let's get together and enjoy a good evening of bass togeth
 
 
 
-<div class=" block flex justify-center sm:px-40">
-<h1 class="text-white">PAST EVENTS</h1>
+<div class=" block flex justify-center py-4 sm:px-40">
+<h1 class="text-white">UPCOMING EVENTS</h1>
 
 </div>
 <div class="block1 block flex justify-center     ">
    <div class=" bg-gray-500 text-white rounded-lg   ">
-   <p class="block  text-white-800 p-8  ">X-Massive DUB takes you back to the roots on the 2nd of December! 
-
-   </p>
+   <p class="block  text-white-800 p-8  ">Unfortunately they are no upcoming events.
+Follow us on Instagram and Facebook for future updates! 
+</p>
    </div>
 
 </div>
@@ -179,12 +184,15 @@ The event is FREE, so let's get together and enjoy a good evening of bass togeth
 </h1>
 </div>
 
+        </div>
      
      </template>
  
  <style>
  
- 
+ .background{
+  background-image: url("../assets/KANTENFOND.png");
+}
  body {
        margin: 0;
        padding: 0;
@@ -227,7 +235,8 @@ li:hover {
      font-size: 5em;
      text-shadow: 2px 2px #648af3;
  }
-     
+    
+ 
  
  /* responsive */
  @media screen and (max-width: 600px) {

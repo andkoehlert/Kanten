@@ -2,6 +2,8 @@
 
 
 <template>
+        <div class="background">
+
   <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
@@ -65,7 +67,7 @@
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/DeftLogo.png" 
         
         alt="" 
         
@@ -85,7 +87,7 @@
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/VertexLogo.png" 
         
         alt="" 
         
@@ -97,7 +99,7 @@
       class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
-    
+
 </div>
 </div>
 </div>
@@ -107,7 +109,7 @@
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+  <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/XLogo.png" 
         
         alt="" 
         
@@ -129,7 +131,7 @@
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo justify-center items-center	" src="../assets/LogoKanten.png" 
+        <img class="event_logo h-48 w-48 justify-center items-center	" src="../assets/ManaLogo.png" 
         
         alt="" 
         
@@ -273,15 +275,21 @@
   kanten@gmail.com
 </h1>
 </div>
+
+        </div>
 </template>
 
 <style>
+ .background{
+  background-image: url("../assets/KANTENFOND.png");
+}
+
     /* CSS styles for the navigation */
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #333;
+      background-color: #181717;
     }
     
     .navbar {
@@ -317,9 +325,22 @@ li:hover {
 
     }
 
+.event_logo{
+
+}
+
+       
+   /* responsive */
+   @media screen and (max-width: 600px) {
+     
+  .event_logo{
+  padding-left: 3em;
+  }
 
 
-    
+     }
+   
+   
     
    
   </style>

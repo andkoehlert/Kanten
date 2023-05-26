@@ -114,10 +114,63 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ShirtView.vue')
-    }
+    },
+    {
+      path: '/checkOut',
+      name: 'check',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/CheckOutView.vue')
+    },
+    {
+      path: '/signin',
+      name: 'signion',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/signin.vue')
+    },
+    {
+      path: '/feed',
+      name: 'feed',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Feed.vue'),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/register',
+      name: 'register',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/register.vue')
+    },
   
-  ]
+  
+  ],
+});
+
+
+
+/*
+router.beforeEach((to, from, next) => {
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    if (getAuth().currentUser){
+      next();
+    } else {
+      alert("you dont have access");
+      next("/");
+    }
+  }
 })
+*/
 
 
 export default router
+
+

@@ -142,6 +142,7 @@ class="card mb-5"
   todo.done}"
   
   >
+  <img :src="todo.imgURL" alt="">SSS
   <p>
   {{ todo.content }}    
 
@@ -152,7 +153,7 @@ class="card mb-5"
 
     </p>
       <p>
-      {{ todo.artist }}    
+      {{ todo.artist  }}    
 
       </p>
         <p>
@@ -234,6 +235,7 @@ onSnapshot(todosCollectionQuery, (querySnapshot) => {
     done: doc.data().done,
     title: doc.data().title,
     artist: doc.data().artist,
+    imgURL: doc.data().imgURL,
     time: doc.data().time,
     description: doc.data().description
   }

@@ -9,15 +9,15 @@
   class="relative h-screen flex items-center justify-center  overflow-hidden"
 >
   <div
-    class="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl"
+    class="relative z-30 p-5 text-2xl text-white  bg-opacity-50 rounded-xl "
   >
-  <div class="logo content-center relative flex items-center justify-center mb-12">
+  <div class="logo content-center relative flex items-center justify-center mb-12  ">
     
-    <img src="../assets/Kanten.png" class="logo  h-56 w-56 object-scale-down	;
+    <img src="../assets/Kanten.png" class="logo  h-56 w-56 object-scale-down bg-blend-screen 	;
 " alt="">
 
   </div>
-  <hr class="line_1 sm:invisible md:visible">
+  <hr class="line sm:invisible md:visible ">
 
  <nav class="navbar_2">
   <ul class="home_nav md:flex	 items-center gap-10	  ">
@@ -28,7 +28,7 @@
      duration-150 border-b-8 border-transparent 
      hover:border-purple-500" >VOLUNTEER</RouterLink>
     </li>
-    <hr  class="md:invisible ">
+    <hr  class="line_1 md:invisible ">
     <li>
       <RouterLink to="/event"
       class="hover:text-white text-white text-2xl font-bold transition
@@ -40,7 +40,7 @@
 
     
     </li>
-    <hr  class="md:invisible">
+    <hr  class="line_1 md:invisible">
     <li>
       <RouterLink to="/gallery"
       class="hover:text-white text-white text-2xl font-bold transition
@@ -50,7 +50,7 @@
 
      
     </li>
-    <hr  class="md:invisible">
+    <hr  class="line_1 md:invisible">
     <li>
       <RouterLink to="/about"
       class="hover:text-white text-white text-2xl font-bold transition
@@ -60,7 +60,7 @@
 
       
     </li>
-    <hr  class="md:invisible">
+    <hr  class="line_1 md:invisible">
     <li>
       <RouterLink to="/merch"
       class="hover:text-white text-white text-2xl font-bold transition
@@ -70,9 +70,10 @@
 
     
     </li>
-    <hr  class="md:invisible">
+    <hr  class="line_1 md:invisible">
   </ul>
  </nav>
+
  
   <hr class="line_1 sm:invisible md:visible">
  
@@ -84,6 +85,8 @@
     <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
   </div>
   <div> <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+
+
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
@@ -154,14 +157,15 @@ body {
 }
 
 .logo{
-  mix-blend-mode: overlay;
-
+  mix-blend-mode:difference;
 }
 
 .content h1, .content h2{
   color: white;
 }
 
+.line_1{
+}
 
 /* medieQ*/
 @media screen and (max-width: 1200px) {
@@ -186,9 +190,12 @@ body {
   }
 
   .line_1{
-    display: none;
-  }
+  width: 250px;
+}
 
+.line{
+  display: none;
+}
   .navbar_2 ul li a{
 
 padding-left: 2.7em;
