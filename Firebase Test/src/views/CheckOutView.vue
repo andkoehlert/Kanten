@@ -1,66 +1,27 @@
 <template>
     <div class="background">
+<div class="flex justify-around">
 
-<div class="navbar bg-base-100">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-primary lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li>
-        <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
-      </li>
-      <li> 
-        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
-      </li>
-      <li>
-    <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
-  </li>
-      <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
-  </li>
-  <li> 
-    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
-  </li>
-      </ul>
-    </div>
-   
+  <div class="flex justify-start pt-16  ">
+  <div class="flex-none">
+    <h1 class="aboutHeader">
+      <RouterLink to="/merch" class="aboutHeader"><img src="../assets/arrow.png" alt="back" class="h-8 w-8"></RouterLink>
+    </h1>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-
-      <span class="slash">\</span>
-
-      <li> <RouterLink to="/" class="hover:text-white">HOME</RouterLink> </li>
-
-      <span class="slash">\</span>
-
-      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
-     
-      <span class="slash">\</span>
-
-      <li><RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink></li>
-
-      <span class="slash">\</span>
-
-      <li><RouterLink to="/merch" class="hover:text-white"> MERCH</RouterLink></li>
-
-      <span class="slash">\</span>
-
-      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
-
-      <span class="slash">\</span>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;"></a>
-  </div>
+  
 </div>
 
+<div class="flex justify-start pt-16">
+    <a class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;"></a>
+  </div>
+
+</div>
+     
 
 
 
-<div class="min-w-screen min-h-screen  flex items-center justify-center px-5 pb-10 pt-16">
+
+<div class="min-w-screen min-h-screen  flex items-center justify-center px-5 pb-10 ">
     <div class="w-full mx-auto rounded-lg bg-white shadow-lg p-5 text-gray-700" style="max-width: 600px">
         <div class="w-full pt-1 pb-5">
             <div class="bg-indigo-500 text-white overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg flex justify-center items-center">
@@ -143,10 +104,11 @@
     </div>
 </div>
 
+
     </div>
 </template>
 
-<style>
+<style scoped>
 .background{
   background-image: url("../assets/KANTENFOND.png");
 }
@@ -156,8 +118,7 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+  
   display: inline-block;
   vertical-align: middle;
   background-origin: border-box;
@@ -198,8 +159,7 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+  
   background-repeat: no-repeat;
   padding-top: 0.5rem;
   padding-right: 2.5rem;
@@ -229,80 +189,18 @@
 }
 
 
-/*NAV */
-body {
-  background-color: #333 ;
-}
-.navbar {
-  background-color: #333;
+.aboutHeader {
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 4px 4px #1838a1;
+  font-family: MadeOkine;
 }
 .btn {
-  background-color: #333;
+  background-color: #33333300;
   border: none;
 }
 .btn:hover {
-  background-color: #333;
-}
-li {
-  color: white;
-  margin: 0px 10px 0px 10px;
-}
-li:hover {
-  text-shadow: 4px 4px #1838a1;
-}
-.slash {
-  font-size: 30px;
-  color: #fff;
-  margin-top: 2px;
-}
-.menu {
-  background-color: #333;
-}
-.aboutHeader {
-  color: #fff;
-  font-size: 50px;
-  text-shadow: 4px 4px #1838a1;
-}
-.aboutTitle {
-  font-weight: 600;
-  font-size: 30px;
-  color: #fff;
-  margin: 20px 40px;
-}  
-.rightalign {
-  text-align: end;
-}
-.aboutParagraph {
-  font-size: 18px;
-  margin: 40px;
-  color: #fff;
-  text-align: justify;
-}
-.newsletterTitle {
-  text-align: center;
-  color: #fff;
-  font-size: 25px;
-}
-.mailKanten {
-  font-size: 25px;
-  text-decoration: none;
-  color: #fff;
-}
-.mailKanten:hover {
-  color: #c7c7c7;
-}
-@media screen and (max-width:650px) {
-  .aboutTitle {
-    text-align: center;
-    font-size: 20px;
-  }
-  .aboutTitle .rightalign {
-    text-align: center;
-  }
-  .aboutParagraph {
-    font-size: 12px;
-  }
-}
+  background-color: #33333300;
 
-
+}
 </style>

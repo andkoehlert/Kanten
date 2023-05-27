@@ -59,7 +59,7 @@
 
  
      <div class="col-start-2 m-20 borderEvent">
-       <RouterLink to="/event" class="pb-1 eventBack">EVENTS</RouterLink>
+       <RouterLink to="/event" class="pb-1 eventBack flex gap-2"><img src="../assets/arrow.png" alt="back" class="h-8 w-8 mt-1.5"> EVENTS</RouterLink>
      </div>
      <div class="flex justify-center">
        <div>
