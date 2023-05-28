@@ -94,42 +94,43 @@
     </div>
     
     <div class="me-10 ms-10 lg:me-20 lg:ms-10">
-      <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
-        <div class="badass-todo grid">
-  
-  <div class="aboutTitle has-text-centered text-white">
-  Sign up for our NEWSLETTER</div>
-  
-  <form @submit.prevent="addTodo">
+
+      <h1 class="newsletterTitle w-64 mb-10 me-auto ms-auto mt-10 lg:mt-0 animate-pulse">
+          SIGN UP FOR OUR NEWSLETTER
+        </h1>
+      <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  lg:border-2 ">
+
+        
+        <form @submit.prevent="addTodo">
     
     
     
     
     
-    <div class="field is-grouped ">
-    <p class="control is-expanded">
+    <div class="field is-grouped">
+    <p class="control is-expanded flex flex-col justify-center">
       <input 
       
       v-model="newTodoContent"
-class="m-4 rounded-2xl p-3"      type="text" 
+class=" rounded-2xl p-3 2xl:w-80 lg:w-60 w-80 me-auto ms-auto mb-3 mt-5 "      type="text" 
       placeholder="First name">
     
       
       <input 
       v-model="newTodoDescription"
-      class="m-4 rounded-2xl p-3"        type="text" 
+      class=" rounded-2xl p-3 2xl:w-80 lg:w-60 w-80 me-auto ms-auto my-3"        type="text" 
       placeholder="Last name">
     
       
       <input 
       v-model="newTodoTitle"
-      class="m-4 rounded-2xl p-3"        type="text" 
-      placeholder="Last name">
+      class="rounded-2xl p-3 2xl:w-80 lg:w-60 w-80 me-auto ms-auto my-3"        type="text" 
+      placeholder="E-mail">
     
-      <p class="control">
+      <p class="control flex">
       <button 
       :disabled="!newTodoContent"
-      class="button is-info m-4 rounded-2xl p-3">
+      class="button is-info  rounded-2xl p-3 w-60 me-auto ms-auto mt-5 mb-16">
         Submit
       </button>
     </p>
@@ -137,14 +138,18 @@ class="m-4 rounded-2xl p-3"      type="text"
     </p>
    
   </div>
-  </form>
+  </form> 
+
+   </div>
+  
+  
   
     
   
   
   <div 
   v-for="todo in todos"
-  class="card mb-5 " 
+  class="card mb-0 " 
   :class="{'has-background-success-light ' : todo.done}"
   
   >
@@ -210,8 +215,7 @@ class="m-4 rounded-2xl p-3"      type="text"
   </div>
     </div>
 -->
-  </div>
-    </div>
+  
   
 
       </div>
@@ -491,7 +495,7 @@ li:hover {
 .newsletterTitle {
   text-align: center;
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   font-family: MadeOkine;
 }
 .mailKanten {
