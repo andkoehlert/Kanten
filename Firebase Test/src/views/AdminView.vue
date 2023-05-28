@@ -132,42 +132,44 @@ class="card mb-5 "
 :class="{'has-background-success-light ' : todo.done}"
 
 >
-  <div class="card-content">
-    <div class="content">
-
-<div class="columns is-mobile is-vcentered">
-  <div class="column"
-  :class="{'has-text-success line-through' : 
-  todo.done}"
+<div class="card-content has-text-centered">
+      <div class="align-center justify-center">
   
-  >
-  <img :src="todo.imgURL" alt="">
-  <p>
-  {{ todo.content }}    
-
-
-  </p>
-    <p>
-    {{ todo.title }}    
-
+        <div class="columns is-mobile is-vcentered  ">
+    <div class="column"
+    :class="{'has-text-success line-through' : 
+    todo.done}"
+    
+    >
+    <img :src="todo.imgURL" alt=""  >
+    <p class="py-6">
+    {{ todo.content }}    
+  
+  
     </p>
-      <p>
-      {{ todo.artist  }}    
-
+      <p class="py-6">
+      {{ todo.title }}    
+  
       </p>
-        <p>
-         {{ todo.time }}    
-
+        <p class="py-6">
+        {{ todo.artist  }}    
+  
         </p>
           <p>
-            {{ todo.description }}    
-
+           {{ todo.time }}    
+  
           </p>
+            <p>
+              {{ todo.description }}    
+  
+            </p>
+    
   
 
-
   </div>
-  <div class="column  ">
+  
+</div>
+<div class="column  ">
     <button 
     @click="toggleDone(todo.id)"
     class="button"
@@ -186,8 +188,6 @@ class="button is-danger ml-2">
   &cross; 
 </button>
   </div>
-</div>
-
 
 </div>
   </div>
@@ -463,7 +463,6 @@ li:hover {
 
 
 .card-content{
-  height: 500px;
 }
    
 </style>

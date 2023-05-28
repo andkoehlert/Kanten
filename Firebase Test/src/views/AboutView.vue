@@ -95,19 +95,124 @@
     
     <div class="me-10 ms-10 lg:me-20 lg:ms-10">
       <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
-        <h1 class="newsletterTitle w-64 me-auto ms-auto mt-10 lg:mt-0 animate-pulse">
-          SIGN UP FOR OUR NEWSLETTER
-        </h1>
-        <form style="border-color: #ffffff55;" class="newsletterForm  ms-4 me-4 sm:ms-32 sm:me-32 lg:ms-auto lg:me-auto mt-8 border-2 xl:p-4 p-auto  flex flex-col justify-center ">
-          
+        <div class="badass-todo grid">
+  
+  <div class="aboutTitle has-text-centered text-white">
+  Sign up for our NEWSLETTER</div>
+  
+  <form @submit.prevent="addTodo">
+    
+    
+    
+    
+    
+    <div class="field is-grouped ">
+    <p class="control is-expanded">
+      <input 
+      
+      v-model="newTodoContent"
+class="m-4 rounded-2xl p-3"      type="text" 
+      placeholder="First name">
+    
+      
+      <input 
+      v-model="newTodoDescription"
+      class="m-4 rounded-2xl p-3"        type="text" 
+      placeholder="Last name">
+    
+      
+      <input 
+      v-model="newTodoTitle"
+      class="m-4 rounded-2xl p-3"        type="text" 
+      placeholder="Last name">
+    
+      <p class="control">
+      <button 
+      :disabled="!newTodoContent"
+      class="button is-info m-4 rounded-2xl p-3">
+        Submit
+      </button>
+    </p>
+  
+    </p>
+   
+  </div>
+  </form>
+  
+    
+  
+  
+  <div 
+  v-for="todo in todos"
+  class="card mb-5 " 
+  :class="{'has-background-success-light ' : todo.done}"
+  
+  >
 
-        <input type="text" id="email" class="m-4 rounded-2xl p-3" placeholder="First Name" required>
-        <input type="text" id="email" class="m-4 rounded-2xl p-3" placeholder="Last Name" required>
-        <input type="email" id="email" class="m-4 rounded-2xl p-3" placeholder="E-mail" required>
-        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
-        focus:ring-blue-300 font-medium rounded-3xl text-sm w-32 xl:w-56 2xl:w-64 me-auto ms-auto mt-10 mb-10 p-3  text-center dark:bg-blue-600 
-        dark:hover:bg-blue-700 dark:focus:ring-blue-800">SIGN IN</button>
-        </form>
+  <!-- The box apper
+    <div class="card-content">
+      <div class="content">
+  
+  <div class="columns is-mobile is-vcentered">
+    <div class="column"
+    :class="{'has-text-success line-through' : 
+    todo.done}"
+    
+    >
+    <img :src="todo.imgURL" alt="">
+    <p>
+    {{ todo.content }}    
+  
+  
+    </p>
+      <p>
+      {{ todo.title }}    
+  
+      </p>
+        <p>
+        {{ todo.artist  }}    
+  
+        </p>
+          <p>
+           {{ todo.time }}    
+  
+          </p>
+            <p>
+              {{ todo.description }}    
+  
+            </p>
+    
+  
+  
+    </div>
+    <div class="column  ">
+      <button 
+      @click="toggleDone(todo.id)"
+      class="button"
+      :class="todo.done ? 'is-success' :
+      
+      'is-light'"
+      
+      
+      >
+    &check; 
+  </button>
+  <button
+  @click="deleteTodo(todo.id
+  )"
+  class="button is-danger ml-2">
+    &cross; 
+  </button>
+    </div>
+  </div>
+  
+  
+  </div>
+    </div>
+-->
+  </div>
+    </div>
+  
 
       </div>
     </div>
@@ -147,7 +252,177 @@
 
   </template>
 
+<script setup>
+  
+/* imports
+*/
+import { RouterLink, RouterView } from 'vue-router';
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
+import {ref as refVue, reactive, onMounted} from 'vue'
+import { collection, onSnapshot, 
+  addDoc, doc, deleteDoc, updateDoc,   
+  query, orderBy,  
+} from "firebase/firestore";
+
+import { db } from '@/firebase';
+
+
+const todosCollectionRef = collection(db, 'Emailcollections')
+const todosCollectionQuery = query(todosCollectionRef, orderBy('date', 'desc'))
+
+/*
+Todos*/
+
+
+let todos = refVue([
+])
+
+
+onMounted(() => {
+
+onSnapshot(todosCollectionQuery, (querySnapshot) => {
+  const fbTodos = [];
+  querySnapshot.forEach((doc) => {
+  const todo = {
+    id: doc.id,
+    content: doc.data().content,
+    done: doc.data().done,
+    title: doc.data().title,
+    artist: doc.data().artist,
+    imgURL: doc.data().imgURL,
+    time: doc.data().time,
+    description: doc.data().description
+  }
+
+  fbTodos.push(todo)  
+  })
+  todos.value = fbTodos
+  console.log("test", todos.value)
+
+
+
+})
+
+
+})
+ 
+const newTodoContent = refVue('')
+const newTodoTitle = refVue('')
+const newTodoArtist = refVue('')
+const newTodoTime = refVue('')
+const newTodoDescription = refVue('')
+const addTodo =() => {
+   addDoc(todosCollectionRef, {
+      content: newTodoContent.value,
+      done: false,
+      date: Date.now(),
+      title: newTodoTitle.value,
+      artist: newTodoArtist.value,
+      time: newTodoTime.value,
+      description: newTodoDescription.value,
+      imgURL: addItemData.imgURL
+    });
+  newTodoContent.value = ''
+  newTodoTitle.value = ''
+  newTodoArtist.value = ''
+  newTodoTime.value = ''
+  newTodoDescription.value = ''
+}
+
+/* 
+Delete todo
+*/
+
+const deleteTodo = id => {
+   deleteDoc(doc(todosCollectionRef, id));
+}
+
+const toggleDone = id => {
+  const index = todos.value.findIndex(todo => todo.id
+  === id)
+
+
+ updateDoc(doc(todosCollectionRef, id), {
+  done: !todos.value[index].done
+});
+
+}
+
+
+// Add item data: title, description, image URL and have the button disabled until image is uploaded
+let addItemData = reactive({
+  imgURL: '',
+})
+
+const storage = getStorage();
+ 
+// Firebase storage upload image + get download URL + enable button after image uploaded
+const uploadImg = async(event) => {
+  let file = event.target.files[0]; // get the file
+  console.log("file", file)
+// Create the file metadata
+/** @type {any} */
+const metadata = {
+  contentType: 'image/jpeg'
+};
+
+// Upload file and metadata to the object 'images/mountains.jpg'
+const storageRef = ref(storage, 'images/' + file.name);
+
+const uploadTask = uploadBytesResumable(storageRef, file, metadata);
+// Listen for state changes, errors, and completion of the upload.
+uploadTask.on('state_changed',
+  (snapshot) => {
+    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+    let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    console.log('Upload is ' + progress + '% done');
+    switch (snapshot.state) {
+      case 'paused':
+        console.log('Upload is paused');
+        break;
+      case 'running':
+        console.log('Upload is running');       
+        break;
+    }
+  }, 
+  (error) => {
+    // A full list of error codes is available at
+    // https://firebase.google.com/docs/storage/web/handle-errors
+    switch (error.code) {
+      case 'storage/unauthorized':
+        // User doesn't have permission to access the object
+        break;
+      case 'storage/canceled':
+        // User canceled the upload
+        break;
+
+      // ...
+
+      case 'storage/unknown':
+        // Unknown error occurred, inspect error.serverResponse
+        break;
+    }
+  }, 
+  () => {
+    // Upload completed successfully, now we can get the download URL
+    getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+      console.log('File available at', downloadURL);
+
+        addItemData.imgURL = downloadURL // update variable imgURL and put the image URL link in it. 
+    });
+  }  
+);
+}
+
+
+
+/*
+Firebase
+*/
+
+
+</script>
 <style scoped>
 @font-face {
   font-family: 'MadeOkine';

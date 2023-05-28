@@ -91,14 +91,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/DeftView.vue')
     },
-    {
-      path: '/hoodie',
-      name: 'hoodie',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/HoodieView.vue')
-    },
+
     {
       path: '/cap',
       name: 'cap',
@@ -125,7 +118,7 @@ const router = createRouter({
     },
     {
       path: '/signin',
-      name: 'signion',
+      name: 'signin',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -150,6 +143,44 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/register.vue')
     },
+
+    {
+      path: '/adminDeft',
+      name: 'adminDeft',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AdminDeftView.vue')
+    },
+    {
+      path: '/adminMana',
+      name: 'adminMana',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AdminManaView.vue')
+    },
+
+    {
+      path: '/adminVertex',
+      name: 'adminVertex',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AdminVertexView.vue')
+    },
+
+    {
+      path: '/adminXmassive',
+      name: 'adminXmassive',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AdminXmassiveView.vue')
+    },
+  
+  
+  
   
   
   ],
