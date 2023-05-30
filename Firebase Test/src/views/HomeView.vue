@@ -5,6 +5,8 @@
 
 
 <template>
+    <div class="background">
+
 <header
   class="relative h-screen flex items-center justify-center  overflow-hidden"
 >
@@ -17,69 +19,61 @@
 " alt="">
 
   </div>
-  <hr class="line sm:invisible md:visible ">
 
- <nav class="navbar_2">
+ <nav class="navbar_2 ">
   <ul class="home_nav md:flex	 items-center gap-10	  ">
-    <hr class="md:invisible">
 
-    <li>
-      <RouterLink  to="/voluenteer" class="hover:text-white text-white text-2xl font-bold transition
+    <li class="vol my-4">
+      <RouterLink  to="/voluenteer" class=" hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500" >VOLUNTEER</RouterLink>
+     sm:hover:border-blue-800" >VOLUNTEER</RouterLink>
     </li>
-    <hr  class="line_1 md:invisible ">
-    <li>
+    <li class="my-4">
       <RouterLink to="/event"
       class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500"
+     sm:hover:border-blue-800"
       
       
       >EVENTS</RouterLink>
 
     
     </li>
-    <hr  class="line_1 md:invisible">
-    <li>
+    <li class="my-4">
       <RouterLink to="/gallery"
       class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500"
+     sm:hover:border-blue-800"
       >GALLERY</RouterLink>
 
      
     </li>
-    <hr  class="line_1 md:invisible">
-    <li>
+    <li class="my-4">
       <RouterLink to="/about"
       class="hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500"
+     sm:hover:border-blue-800"
       >ABOUT</RouterLink>
 
       
     </li>
-    <hr  class="line_1 md:invisible">
-    <li>
+    <li class="my-4">
       <RouterLink to="/merch"
-      class="hover:text-white text-white text-2xl font-bold transition
+      class=" hover:text-white text-white text-2xl font-bold transition
      duration-150 border-b-8 border-transparent 
-     hover:border-purple-500"
+    sm: hover:border-blue-800"
       >MERCH</RouterLink>
 
     
     </li>
-    <hr  class="line_1 md:invisible">
   </ul>
  </nav>
 
  
-  <hr class="line_1 sm:invisible md:visible">
  
   <div class="flex justify-center mt-20">
   <div>
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
   </div>
   <div>
     <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
@@ -98,10 +92,12 @@
 
 
   <video
-    autoplay
+  id="background-video"
+  md:autoplay  
+  autoplay
     loop
     muted
-    class="video absolute z-10 w-auto"
+    class="video absolute z-10 w-100"
   > 
     <source
       src="../assets/4k.mp4"
@@ -111,7 +107,7 @@
 
 
 
-
+    </div>
 </template>
 
 
@@ -123,6 +119,7 @@
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
+  
 }
 
 body {
@@ -133,6 +130,10 @@ body {
    min-height: 10vh;
 }
 
+
+.video{
+
+}
 
 /* Add some content at the bottom of the video/page */
 .content {
@@ -178,7 +179,22 @@ body {
 
 @media screen and (max-width: 600px) {
   
+  .background{
+  background-image: url("../assets/KANTENFOND.png");
+}
+
+.logo{
+ width: 150px;
+ margin-left: 35px;
+ padding-top: 80px;
+}
+
+.video{
+  display: none;
+}
   
+  .test{
+  }
 
   .line_1{
   width: 250px;
@@ -189,9 +205,12 @@ body {
 }
   .navbar_2 ul li a{
 
-padding-left: 2.7em;
+padding-left: 2.5em;
 
   }
+.vol{
+
+}
 
   .video{
   max-width: none;
@@ -205,6 +224,8 @@ padding-left: 2.7em;
 </style>
 
 <script>
+
+
 // Get the video
 var video = document.getElementById("myVideo");
 

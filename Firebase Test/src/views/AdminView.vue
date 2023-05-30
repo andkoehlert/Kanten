@@ -445,9 +445,7 @@ li:hover {
 }
   
 .badass-todo{
-  max-width: 400px;
-  padding: 40px;
-  margin: 0 auto;
+
 }
 
 .line-through{

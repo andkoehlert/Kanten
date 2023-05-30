@@ -1,7 +1,7 @@
 <template>
       <div class="background">
 
-<div class="navbar bg-base-100">
+        <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-primary lg:hidden">
@@ -12,14 +12,16 @@
         <RouterLink to="/" class="hover:text-white">HOME</RouterLink>
       </li>
       <li> 
-        <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink>
+        <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink>
       </li>
       <li>
     <RouterLink to="/voluenteer" class="hover:text-white">VOLUNTEER</RouterLink>
   </li>
       <li><RouterLink to="/merch" class="hover:text-white">MERCH</RouterLink>
   </li>
-  <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
+  <li> 
+    <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink>
+  </li>
       </ul>
     </div>
    
@@ -33,7 +35,7 @@
 
       <span class="slash">\</span>
 
-      <li>  <RouterLink to="/event" class="hover:text-white">EVENTS</RouterLink> </li>
+      <li><RouterLink to="/about" class="hover:text-white"> ABOUT US</RouterLink></li>
      
       <span class="slash">\</span>
 
@@ -45,43 +47,50 @@
 
       <span class="slash">\</span>
 
-      <li> <RouterLink to="/about" class="hover:text-white">ABOUT US</RouterLink></li>
+      <li> <RouterLink to="/gallery" class="hover:text-white">GALLERY</RouterLink></li>
 
       <span class="slash">\</span>
     </ul>
   </div>
   <div class="navbar-end">
-    <a  class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;">
-    
-    </a>
-
+    <a class="btn" style="width: 160px; height: auto;"><img src="../assets/LogoKanten.png" alt="logotop" style="height: auto; width: 160px;"></a>
   </div>
 </div>
 
 
 
-<!-- HEADING--> 
+<!-- HEADING-->
 
-<div class="flex justify-center mt-10 lg:justify-start lg:mt-6 lg:ms-20">
-  <div class="flex-none ...">
-    <h1 class="aboutHeader">
-      GALLERY
-    </h1>
+<div class="flex justify-start gap-5 h-40 ps-20 text-white mt-6">
+  <div>
+    <h1 class="
+    text-7xl font-bold transition cursor-pointer
+     duration-150 ">Gallery</h1>
   </div>
   
 </div>
 
 <!-- Filter-->
 
-<div class="gallery_h2 flex justify-start  gap-10 h-10 ms-20 text-white mb-5 mt-20">
+<div class="gallery_h2 flex justify-start gap-10 h-56 ps-20 text-white">
   <div>
-    <p class=" filterGallery cursor-pointer" >ALL</p>
+    <p class="
+    text-5xl font-bold transition cursor-pointer
+     duration-150 border-b-8 border-transparent 
+     hover:border-purple-500">
+All</p>
   </div>
   <div>
-    <p class="filterGallery cursor-pointer" >PHOTOS</p>
+    <p class="
+    text-5xl font-bold transition cursor-pointer
+     duration-150 border-b-8 border-transparent 
+     hover:border-purple-500">Photos</p>
   </div>
   <div>
-    <p class="filterGallery cursor-pointer" >VIDEOS</p>
+    <p class="
+    text-5xl font-bold transition cursor-pointer
+     duration-150 border-b-8 border-transparent 
+     hover:border-purple-500">Videos</p>
   </div>
 </div>
 
@@ -89,7 +98,7 @@
 <!-- Photo Grid-->
 
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
         <img 
         class="h-auto max-w-full rounded-lg 
@@ -160,19 +169,41 @@
     </div>
 </div>
 
+<!-- Buttons socials-->
+
+
+<div class="container m-auto flex grid grid-cols-1 content-around">
+           
+           <div class=" flex items-center justify-center h-40">
+              
+<!-- Buttons socials-->
 <div class="flex justify-center mt-20">
   <div>
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
   </div>
   <div>
     <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
   </div>
-  <div> <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
+           </div>
+                </div>
 
-<div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> kanten@gmail.com </a>
-</div>
+<!-- socials-->
+
+                 <div class="container m-auto flex grid grid-cols-1 content-around text-white">
+           
+            <div class=" flex items-center justify-center">
+               
+ <!--  socials-->
+ kanten@gmail.com
+            
+            
+            </div>
+           
+            
+
+        </div>
 
 
 
@@ -183,14 +214,24 @@
 
 
 <style scoped>
-@font-face {
+.background{
+  background-image: url("../assets/KANTENFOND.png");
+}
+
+    /* CSS styles for the navigation */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #181717;
+    }
+    
+    @font-face {
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
 }
-.background{
-  background-image: url("../assets/KANTENFOND.png");
-}
+
 
 
 .navbar {
@@ -227,13 +268,6 @@ li:hover {
   text-shadow: 4px 4px #1838a1;
   font-family: MadeOkine;
 }
-.aboutTitle {
-  font-weight: 600;
-  font-size: 30px;
-  color: #fff;
-  margin: 20px 40px;
-  font-family: MadeOkine;
-}  
 .mailKanten {
   font-size: 25px;
   text-decoration: none;
@@ -243,22 +277,17 @@ li:hover {
   color: #c7c7c7;
 }
 
-.filterGallery {
-font-size: 30px;
-color: #fff;
-font-family: MadeOkine;
-}
-.filterGallery:hover {
-  border-bottom: 4px solid #1838a1;
-}
-.active {
-  border-bottom: 4px solid #1838a1;
+.eventName {
+  font-family: "mundial", sans-serif;
 }
 
+
+       
+  
 /* responsive */
 @media screen and (max-width: 600px) {
   
-  .filterGallery p{
+  .gallery_h2 p{
 font-size: 1em;
     
   }
@@ -274,4 +303,14 @@ font-size: 1em;
   
 <script>
 
+
+// JavaScript function to toggle the responsive class on the navigation
+function toggleNavbar() {
+  var navbar = document.getElementById("myNavbar");
+  if (navbar.className === "navbar") {
+    navbar.className += " responsive";
+  } else {
+    navbar.className = "navbar";
+  }
+}
 </script>

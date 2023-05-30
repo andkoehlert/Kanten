@@ -326,7 +326,7 @@ onMounted(() => {
 
 .badass-todo{
   max-width: 1000px;
-  padding: 100px;
+  padding: 50px;
   margin: 0 auto;
 }
 

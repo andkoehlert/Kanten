@@ -87,7 +87,7 @@
         
         />
     </a>
-    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">DEFT</h1>
+    <h1 class="eventName  mb-3 font-normal bg-none border-0  text-white grid justify-center items-center mt-6">DEFT</h1>
     <RouterLink to="/deft"
       class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
@@ -96,23 +96,23 @@
 </div>
 </div>
   <div>
-<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg  mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/VertexLogo.png" 
+        <img class="event_logo h-48 w-48  me-auto ms-auto	" src="../assets/VertexLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">VERTEX</h1>
+    <h1 class="eventName  mb-3 font-normal bg-none border-0  text-white grid justify-center items-center mt-6">VERTEX</h1>
     <RouterLink to="/vertex"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
-
+  
 </div>
 </div>
 </div>
@@ -121,45 +121,43 @@
 
 <div class=" justify-center lg:flex gap-10">
   <div>
-    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg  mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-  <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/XLogo.png" 
+        <img class="event_logo h-48 w-48  me-auto ms-auto	" src="../assets/XLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    
-    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">X-MASSIVE-DUB</h1>
-      <RouterLink to="/xmassive"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+    <h1 class="eventName  mb-3 font-normal bg-none border-0  text-white grid justify-center items-center mt-6">X-MASSIVE-DUB</h1>
+    <RouterLink to="/Xmassive"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
-
-    
+  
 </div>
 </div>
   <div>
-<div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+    <div class="me-auto ms-auto  max-w-sm p-10 mx-8 bg-none border-0  rounded-lg  mt-10">
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="event_logo h-48 w-48 me-auto ms-auto	" src="../assets/ManaLogo.png" 
+        <img class="event_logo h-48 w-48  me-auto ms-auto	" src="../assets/ManaLogo.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="eventName  mb-3 font-normal text-white grid justify-center items-center mt-6">MANA CLUB</h1>
-    <RouterLink to="/manaclub"
-      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
+    <h1 class="eventName  mb-3 font-normal bg-none border-0  text-white grid justify-center items-center mt-6">MANA CLUB</h1>
+    <RouterLink to="/Manaclub"
+      class="inline-flex items-center px-3 py-2 text-sm mt-6 font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
       >Read more</RouterLink>
-    
+  
 </div>
 </div>
 </div>
@@ -173,12 +171,12 @@
 
 <div class="flex justify-center mt-20">
   <div>
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
   </div>
   <div>
     <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
   </div>
-  <div> <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">

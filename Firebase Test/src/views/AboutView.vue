@@ -92,62 +92,52 @@
       saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
   </div>
     </div>
-    
-    <div class="me-10 ms-10 lg:me-20 lg:ms-10">
-      <div class="box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
-        <div class="badass-todo grid">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+
+    <div class="mc_embed_signup me-10 ms-10 lg:me-20 lg:ms-10">
+      
+      <div class="mc_embed_signup_scroll box-content h-auto w-auto pt-0 pe-4 ps-4  border-0 ... ">
+        <div class="mc-field-group grid">
   
   <div class="aboutTitle has-text-centered text-white">
   Sign up for our NEWSLETTER</div>
-  
-  <form @submit.prevent="addTodo">
+  <div class="indicates-required"><span class="asterisk">*</span> </div>
+
+  <form action="https://outlook.us17.list-manage.com/subscribe/post?u=ecb46e12d9e2015d5001cc135&amp;id=ae7700edd4&amp;f_id=00ad5ce0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
     
     
     
     
     
-    <div class="field is-grouped ">
-    <p class="control is-expanded">
-      <input 
-      
-      v-model="newTodoContent"
-class="m-4 rounded-2xl p-3"      type="text" 
-      placeholder="First name">
-    
-      
-      <input 
-      v-model="newTodoDescription"
-      class="m-4 rounded-2xl p-3"        type="text" 
-      placeholder="Last name">
-    
-      
-      <input 
-      v-model="newTodoTitle"
-      class="m-4 rounded-2xl p-3"        type="text" 
-      placeholder="Last name">
-    
-      <p class="control">
-      <button 
-      :disabled="!newTodoContent"
-      class="button is-info m-4 rounded-2xl p-3">
-        Submit
-      </button>
-    </p>
-  
-    </p>
-   
-  </div>
+    <div class="mc-field-group grid">
+	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL" required>
+  <div class="clear foot">
+    <div class="mc-field-group">
+	<input type="text" value="" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
+	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+</div>
+<div class="mc-field-group">
+	<input type="text" value="" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
+	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
+</div>
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+</div>
+	<div id="mce-responses" class="clear foot py-6">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ecb46e12d9e2015d5001cc135_ae7700edd4" tabindex="-1" value=""></div>
+        
+            
+        
   </form>
   
     
   
   
-  <div 
-  v-for="todo in todos"
-  class="card mb-5 " 
-  :class="{'has-background-success-light ' : todo.done}"
-  
-  >
+  <div>
 
   <!-- The box apper
     <div class="card-content">
@@ -236,12 +226,12 @@ class="m-4 rounded-2xl p-3"      type="text"
 
 <div class="flex justify-center mt-20">
   <div>
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
   </div>
   <div>
     <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
   </div>
-  <div> <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
@@ -424,10 +414,29 @@ Firebase
 
 </script>
 <style scoped>
+
+.required{
+  background-color:transparent;
+  color: #fff;
+}
+.button{
+  margin: 0, 0, 0, 0;
+  background-color:transparent;
+color: #fff;
+}
+
+.mce-EMAIL{
+  color: #fff;
+}
+
 @font-face {
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
+
+
+  
+
 }
 .background{
   background-image: url("../assets/KANTENFOND.png");
