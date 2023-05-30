@@ -62,7 +62,7 @@
 
 <!-- HEADING--> 
 
-<div class="flex justify-center mt-10 lg:justify-start lg:mt-6 lg:ms-20">
+<div class="flex justify-center mt-10 mb-20 lg:justify-start lg:mt-6 lg:ms-20">
   <div class="flex-none ...">
     <h1 class="aboutHeader">
       GALLERY
@@ -72,7 +72,7 @@
 </div>
 
 <!-- Filter-->
-
+<!--
 <div class="gallery_h2 flex justify-start  gap-10 h-10 ms-20 text-white mb-5 mt-20">
   <div>
     <p class=" filterGallery cursor-pointer" >ALL</p>
@@ -84,18 +84,20 @@
     <p class="filterGallery cursor-pointer" >VIDEOS</p>
   </div>
 </div>
+-->
 
 
 <!-- Photo Grid-->
 
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    <div>
-        <img 
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 " id="imageDisplay" >
+    <li v-for="image in images" :key="image.img">
+        <img :src="image.img" alt="image.img"
         class="h-auto max-w-full rounded-lg 
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
-    </div>
+        " >
+    </li>
+ 
     <div>
         <img 
         class="h-auto max-w-full rounded-lg 
@@ -158,6 +160,7 @@
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
         " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
     </div>
+   
 </div>
 
 <div class="flex justify-center mt-20">
@@ -274,4 +277,5 @@ font-size: 1em;
   
 <script>
 
+  
 </script>

@@ -165,6 +165,29 @@
 </div>
 </div>
 
+<div class="mt-10 flex flex-col lg:ms-32 md:me-16 md:ms-16 lg:me-32 ms-8 me-8">
+     
+    
+
+    <form class="mt-4" @submit.prevent="addComment">
+      <div class="flex items-center justify-center mb-2">
+        <input v-model="username" class="w-96 mr-2 p-2 border-2 rounded-xl border-black-300 text-white" type="text" placeholder="Enter your username" style="background-color: #70707066;"/>
+      </div>
+      <div class="flex flex-col items-center">
+        <textarea v-model="newComment" class="w-96 mr-2 p-2 border-2 rounded-xl border-black-300 text-white" rows="3" placeholder="give us your feedback!" style="background-color: #70707066;"></textarea>
+        <button type="submit" class="py-2 px-6 bg-blue-600 text-white rounded-xl my-5">Add Comment</button>
+      </div>
+    </form>
+    
+    <div class="mt-4 flex flex-col flex-wrap">
+      <div v-for="(comment, index) in comments" :key="index" class="mb-4 p-4 text-white rounded-xl w-full lg:w-1/2" style="background-color: #70707066;" >
+        <h3 class="font-bold italic" style="text-shadow: 4px 4px #1838a1;">{{ comment.username }}</h3>
+        <p class="whitespace-pre-wrap eventName">{{ comment.comment }}</p>
+        <button @click="deleteComment(index)" class="mt-2 py-1  rounded-xl text-white"><img src="../assets/delete.png" alt="bin"></button>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -209,7 +232,9 @@
   
 }
 
-
+#text {
+  font-size: 30px;
+}
 
 .navbar {
   background-color: #33333300;
@@ -269,13 +294,43 @@ li:hover {
   </style>
   
   <script>
-  // JavaScript function to toggle the responsive class on the navigation
-  function toggleNavbar() {
-    var navbar = document.getElementById("myNavbar");
-    if (navbar.className === "navbar") {
-      navbar.className += " responsive";
-    } else {
-      navbar.className = "navbar";
+ export default {
+  data() {
+    return {
+      comments: [],
+      newComment: "",
+      username: ""
+    };
+  },
+  created() {
+    this.fetchComments();
+  },
+  methods: {
+    fetchComments() {
+      const storedComments = localStorage.getItem("comments");
+      if (storedComments) {
+        this.comments = JSON.parse(storedComments);
+      }
+    },
+    addComment() {
+      if (this.newComment.trim() !== "") {
+        const comment = {
+          username: this.username,
+          comment: this.newComment
+        };
+        this.comments.push(comment);
+        this.saveComments();
+        this.newComment = "";
+        this.username = "";
+      }
+    },
+    deleteComment(index) {
+      this.comments.splice(index, 1);
+      this.saveComments();
+    },
+    saveComments() {
+      localStorage.setItem("comments", JSON.stringify(this.comments));
     }
   }
+};
 </script>
