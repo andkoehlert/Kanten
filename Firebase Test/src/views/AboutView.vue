@@ -105,6 +105,8 @@
 
   <form action="https://outlook.us17.list-manage.com/subscribe/post?u=ecb46e12d9e2015d5001cc135&amp;id=ae7700edd4&amp;f_id=00ad5ce0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
     
+  
+    
     
     
     
@@ -133,11 +135,14 @@
             
         
   </form>
+    
   
     
   
   
   <div>
+
+  
 
   <!-- The box apper
     <div class="card-content">
@@ -200,8 +205,7 @@
   </div>
     </div>
 -->
-  </div>
-    </div>
+  
   
 
       </div>
@@ -500,7 +504,7 @@ li:hover {
 .newsletterTitle {
   text-align: center;
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   font-family: MadeOkine;
 }
 .mailKanten {

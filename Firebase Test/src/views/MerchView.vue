@@ -75,18 +75,18 @@
   <a href="#"
   class="justify-center items-center"
   >
-        <img class="object-contain h-60 w-96 event_logo justify-center items-center	" src="../assets/Cap.webp" 
+        <img class="object-contain h-60 w-96 event_logo justify-center items-center	" src="../assets/DeftCap.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">CAP: 100kr</h1>
+    <h1 class="mb-3 font-normal text-black grid justify-center items-center mt-6" style="font-family: 'MadeOkine';  ">BROWSE OUR BRAND CAPS</h1>
     <RouterLink to="/cap"
       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
-      >Buy</RouterLink>
+      >See More</RouterLink>
   
 </div>
 </div>
@@ -97,19 +97,19 @@
   <a href="#"
   class="justify-center items-center	"
   >
-        <img class="object-contain h-60 w-96  event_logo justify-center items-center	" src="../assets/Cap.webp" 
+        <img class="object-contain h-60 w-96  event_logo justify-center items-center	" src="../assets/manaclub kanten merch.png" 
         
         alt="" 
         
         
         />
     </a>
-    <h1 class="mb-3 font-normal text-white grid justify-center items-center mt-6">T-SHIRT: 100kr</h1>
+    <h1 class="mb-3 font-normal text-black grid justify-center items-center mt-6" style="font-family: 'MadeOkine';">BROWSE OUR BRAND T-SHIRTS</h1>
     
     <RouterLink to="/shirt"
       class="inline-flex items-center px-3 py-2 text-sm  font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 grid justify-center items-center"
       
-      >Buy</RouterLink>
+      >See More</RouterLink>
     
 </div>
 

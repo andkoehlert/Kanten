@@ -61,18 +61,18 @@
 
 <!-- HEADING-->
 
-<div class="flex justify-start gap-5 h-40 ps-20 text-white mt-6">
-  <div>
-    <h1 class="
-    text-7xl font-bold transition cursor-pointer
-     duration-150 ">Gallery</h1>
+<div class="flex justify-center mt-10 mb-20 lg:justify-start lg:mt-6 lg:ms-20">
+  <div class="flex-none ...">
+    <h1 class="aboutHeader">
+      GALLERY
+    </h1>
   </div>
   
 </div>
 
 <!-- Filter-->
-
-<div class="gallery_h2 flex justify-start gap-10 h-56 ps-20 text-white">
+<!--
+<div class="gallery_h2 flex justify-start  gap-10 h-10 ms-20 text-white mb-5 mt-20">
   <div>
     <p class="
     text-5xl font-bold transition cursor-pointer
@@ -93,6 +93,7 @@ All</p>
      hover:border-purple-500">Videos</p>
   </div>
 </div>
+-->
 
 
 <!-- Photo Grid-->
@@ -101,72 +102,48 @@ All</p>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
         <img 
+class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 " id="imageDisplay" >
+    <li v-for="image in images" :key="image.img">
+        <img :src="image.img" alt="image.img"
         class="h-auto max-w-full rounded-lg 
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+        " >
+    </li>
+ 
+    <div>
+        <img 
+        class="h-auto max-w-full rounded-lg 
+        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105" src="../assets/IMG_8721.JPG" alt="">
     </div>
     <div>
         <img 
         class="h-auto max-w-full rounded-lg 
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105 " src="../assets/IMG_8722.JPG" alt="">
     </div>
     <div>
         <img 
         class="h-auto max-w-full rounded-lg 
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105 " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
-    </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg 
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105" src="../assets/IMG_8728.JPG" alt="">
     </div>
     <div>
         <img 
         class="h-auto max-w-full rounded-lg
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+        " src="../assets/IMG_8754.JPG" alt="">
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg 
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+        " src="../assets/IMG_8783.JPG" alt="">
     </div>
     <div>
         <img 
         class="h-auto max-w-full rounded-lg
         group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+        " src="../assets/IMG_8828.JPG" alt="">
     </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
-    </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
-    </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg 
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
-    </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
-    </div>
-    <div>
-        <img 
-        class="h-auto max-w-full rounded-lg 
-        group-hover:opacity-50 transition duration-300 ease-in-out hover:scale-105
-        " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
-    </div>
+    
+   
 </div>
 
 <!-- Buttons socials-->
@@ -303,6 +280,7 @@ font-size: 1em;
   
 <script>
 
+<<<<<<< HEAD
 
 // JavaScript function to toggle the responsive class on the navigation
 function toggleNavbar() {
@@ -313,4 +291,7 @@ function toggleNavbar() {
     navbar.className = "navbar";
   }
 }
+=======
+  
+>>>>>>> 031b38bedd489fda57163c7097d94950bf44f5ae
 </script>
