@@ -114,7 +114,7 @@
     <div class="mc-field-group grid">
 	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL" required>
   <div class="clear foot">
-    <div class="mc-field-group">
+    <div class="mc-field-group py-2">
 	<input type="text" value="" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
 	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
 </div>
@@ -144,74 +144,16 @@
 
   
 
-  <!-- The box apper
-    <div class="card-content">
-      <div class="content">
-  
-  <div class="columns is-mobile is-vcentered">
-    <div class="column"
-    :class="{'has-text-success line-through' : 
-    todo.done}"
-    
-    >
-    <img :src="todo.imgURL" alt="">
-    <p>
-    {{ todo.content }}    
-  
-  
-    </p>
-      <p>
-      {{ todo.title }}    
-  
-      </p>
-        <p>
-        {{ todo.artist  }}    
-  
-        </p>
-          <p>
-           {{ todo.time }}    
-  
-          </p>
-            <p>
-              {{ todo.description }}    
-  
-            </p>
-    
-  
-  
-    </div>
-    <div class="column  ">
-      <button 
-      @click="toggleDone(todo.id)"
-      class="button"
-      :class="todo.done ? 'is-success' :
-      
-      'is-light'"
-      
-      
-      >
-    &check; 
-  </button>
-  <button
-  @click="deleteTodo(todo.id
-  )"
-  class="button is-danger ml-2">
-    &cross; 
-  </button>
-    </div>
-  </div>
-  
-  
-  </div>
-    </div>
--->
-  
-  
 
+  
+</div>
       </div>
     </div>
 
-    <div class="col-span-3 mt-20 sm:me-28 me-0">
+  
+</div>
+
+<div class="col-span-3 mt-20 sm:me-28 me-0">
       <h1 class="locationtag">
         FIND US HERE 
       </h1>
@@ -225,23 +167,24 @@
     </iframe>
 </div>
     </div>
-  
-</div>
 
-<div class="flex justify-center mt-20">
-  <div>
-    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
-  </div>
-  <div>
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
-  </div>
-  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
   <a href="#" class="mailKanten"> kanten@gmail.com </a>
 </div>
-
+    
+<div class="flex justify-center">
+  <div>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
+  </div>
+  <div>
+    
+    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
+  </div>
+  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+</div>
 </div>
 
   </template>

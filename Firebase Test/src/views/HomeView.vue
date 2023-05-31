@@ -15,7 +15,7 @@
   >
   <div class="logo content-center relative flex items-center justify-center mb-12  ">
     
-    <img src="../assets/Kanten.png" class="logo  h-56 w-56 object-scale-down bg-blend-screen 	;
+    <img src="../assets/Kanten.png" class="logo_home  h-56 w-56 object-scale-down bg-blend-screen 	;
 " alt="">
 
   </div>
@@ -111,7 +111,7 @@
 </template>
 
 
-<style>
+<style setup>
 
 @import 'bulma/css/bulma.min.css';
 
@@ -166,12 +166,21 @@ body {
 /* medieQ*/
 @media screen and (max-width: 1200px) {
   
- 
+  .logo_home{
+ width: 150px;
+ margin-right: 60px;
+ padding-top: 80px;
+}
 
   .video{
   max-width: none;
   }
-
+  .background{
+  background-image: url("../assets/KANTENFOND.png");
+}
+.video{
+  display: none;
+}
   }
 
   
@@ -183,7 +192,7 @@ body {
   background-image: url("../assets/KANTENFOND.png");
 }
 
-.logo{
+.logo_home{
  width: 150px;
  margin-left: 35px;
  padding-top: 80px;

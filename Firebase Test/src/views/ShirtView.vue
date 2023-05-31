@@ -85,7 +85,7 @@
       data-te-carousel-item
       data-te-carousel-active>
       <img
-        src="../assets/deft merch.png"
+        src="../assets/deftMerch.png"
         class="block w-full"
         alt="Wild Landscape" />
     </div>
@@ -94,7 +94,7 @@
       class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item>
       <img
-        src="../assets/manaclub kanten merch.png"
+        src="../assets/manaclubKantenMerch.png"
         class="block w-full"
         alt="Camera" />
     </div>
@@ -111,7 +111,7 @@
       class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item>
       <img
-        src="../assets/xmassivedub merch.png"
+        src="../assets/xmassivedubMerch.png"
         class="block w-full"
         alt="Exotic Fruits" />
     </div>
