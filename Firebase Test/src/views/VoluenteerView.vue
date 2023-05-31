@@ -70,22 +70,14 @@
     <h1 class="aboutTitle">
       WANT TO JOIN US?
     </h1>
-    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
-      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
-      ptate quaerat molestiae maiores temporibus, ab praesentium eve
-      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
-      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+    <p class="aboutParagraph"> Our ambition is to create an alternative platform for the youth community in Esbjerg, where the music program features a diverse selection of subgenres across genders and identities. On the first floor of Huset Esbjerg's premises, we are creating a youth cultural center and fostering a cultural community among young people. </p>
 
     <h1 class="aboutTitle rightalign">
       BECOME A MEMBER
     </h1>
-    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
-      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
-      ptate quaerat molestiae maiores temporibus, ab praesentium eve
-      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
-      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+    <p class="aboutParagraph">
+      The venue "Kanten" is operated by the Kanten Association, a community of young people from Esbjerg and newcomers, who aim to establish a volunteer-driven association with membership opportunities through the opening of Kanten. All types of individuals are welcome, and through music and art events, we aim to enhance the cultural life in Esbjerg.
+    </p>
   </div>
     </div>
     

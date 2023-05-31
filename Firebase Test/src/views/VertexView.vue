@@ -116,7 +116,7 @@ todo.done}"
   {{ todo.artist  }}    
 
   </p>
-    <p>
+    <p class="eventHeader">
      {{ todo.time }}    
 
     </p>

@@ -323,6 +323,9 @@ onMounted(() => {
 }
 
 
+.background{
+  overflow-y: hidden;
+}
 
 .badass-todo{
   max-width: 1000px;

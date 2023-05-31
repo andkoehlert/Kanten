@@ -1,6 +1,9 @@
 <template> 
 <link rel="stylesheet" href="https://use.typekit.net/rlp2nwr.css">
-<div class="background">
+<body>
+  
+
+<div  class="background">
 
 
 <div class="navbar bg-base-100">
@@ -74,22 +77,12 @@
     <h1 class="aboutTitle">
       WHO ARE WE?
     </h1>
-    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
-      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
-      ptate quaerat molestiae maiores temporibus, ab praesentium eve
-      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
-      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+    <p class="aboutParagraph">Kanten is Esbjerg’s new social cultural community, driven by the association of Kanten itself. Our vision is to create a platform that capitalizes on the lack of social, and cultural community in Esbjerg and helps it grow. Kanten wants to give Esbjerg’s underrepresented cultural community a scene to perform on - we will do this through a wide selection of different musical events ranging from various different genres. We also want to give space to a soundstudie with practice rooms and club nights with activities. </p>
 
     <h1 class="aboutTitle rightalign">
       OUR LOCAL DJS
     </h1>
-    <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, 
-      nesciunt. Voluptas consequuntur dolores voluptatibus cum volu
-      ptate quaerat molestiae maiores temporibus, ab praesentium eve
-      niet consectetur accusamus asperiores, labore, eum ut nihil? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Dolorem, magni. Earum aliquam deserunt quasi eveniet cum
-      saepe, quos sed mollitia hic id natus perferendis facere aut tempora provident veniam rem!</p>
+    <p class="aboutParagraph">The venue "Kanten" will open on May 12th on the first floor of Huset Esbjerg. It will become the new focal point for the local music scene and youth in Esbjerg. The venue primarily focuses on the emerging underground music scene and will host a variety of events ranging from art exhibitions and DJ schools to electronic parties and concerts that promote diversity. Esbjerg lacks sufficient music venues and cultural initiatives, and Kanten aims to provide a safe alternative with a safe space policy to make Esbjerg's nightlife more secure</p>
   </div>
     </div>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
@@ -186,7 +179,7 @@
   <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
 </div>
-
+</body>
   </template>
 
 <script setup>
@@ -380,13 +373,12 @@ color: #fff;
   font-family: 'MadeOkine';
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
-
-
-  
-
 }
+
+
 .background{
   background-image: url("../assets/KANTENFOND.png");
+ 
 }
 
 
