@@ -94,7 +94,7 @@
   
   <div class="aboutTitle has-text-centered text-white">
   Sign up for our NEWSLETTER</div>
-  <div class="indicates-required"><span class="asterisk">*</span> </div>
+  <div class="indicates-required"><span class="asterisk"></span> </div>
 
   <form action="https://outlook.us17.list-manage.com/subscribe/post?u=ecb46e12d9e2015d5001cc135&amp;id=ae7700edd4&amp;f_id=00ad5ce0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
     
@@ -104,19 +104,22 @@
     
     
     
-    <div class="mc-field-group grid">
+    <div class="mc-field-group flex justify-center flex-col">
 	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL" required>
   <div class="clear foot">
-    <div class="mc-field-group py-2">
+    <div class="mc-field-group py-2 grid">
 	<input type="text" value="" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
 	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
 </div>
-<div class="mc-field-group">
+<div class="mc-field-group grid">
 	<input type="text" value="" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
 	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
 </div>
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
+<div class="flex flex-col justify-center w-52 ms-auto me-auto">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button rounded-xl">
+</div>
+               
+  </div>
 	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
 </div>
 	<div id="mce-responses" class="clear foot py-6">
@@ -133,13 +136,7 @@
     
   
   
-  <div>
-
   
-
-
-  
-</div>
       </div>
     </div>
 
@@ -164,20 +161,23 @@
 
 </div>
 
+
+    
+<div class="flex justify-center mt-10 ">
+  <div>
+    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/instagramkanten.png" alt="instagram"></a>
+  </div>
+  <div>
+    
+    <a href="https://discord.gg/BfEfEtq9" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/discord-icon.png" alt="discord"></a>
+  </div>
+  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/facebook-icon.png" alt="facebook"></a></div>
+</div>
+
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
   <a href="#" class="mailKanten"> kanten@gmail.com </a>
 </div>
-    
-<div class="flex justify-center">
-  <div>
-    <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/instagram-icon.png" alt="instagram"></a>
-  </div>
-  <div>
-    
-    <a href="#" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/discord-icon.png" alt="discord"></a>
-  </div>
-  <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce" src="../assets/facebook-icon.png" alt="facebook"></a></div>
-</div>
+
 </div>
 </body>
   </template>
