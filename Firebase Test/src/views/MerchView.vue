@@ -88,7 +88,7 @@ MERCH
 
 <div class="justify-center flex flex-col md:flex-row md:flex gap-10">
 <div>
-<div class="  me-auto ms-auto max-w-xs  p-4  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="  me-auto ms-auto max-w-xs  p-4  mb-6 bg-white border border-gray-200 rounded-lg mt-10">
 <a href="#"
 class="justify-center items-center"
 >
@@ -112,7 +112,7 @@ class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-w
 
 
 <div>
-<div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+<div class="max-w-xs p-4  me-auto ms-auto  mb-6 bg-white border border-gray-200 rounded-lg shadow   mt-10">
 <a href="#"
 class="justify-center items-center  "
 >
@@ -251,13 +251,5 @@ text-shadow: 2px 2px #648af3;
 
 
 <script>
-// JavaScript function to toggle the responsive class on the navigation
-function toggleNavbar() {
-var navbar = document.getElementById("myNavbar");
-if (navbar.className === "navbar") {
-navbar.className += " responsive";
-} else {
-navbar.className = "navbar";
-}
-}
+
 </script>
