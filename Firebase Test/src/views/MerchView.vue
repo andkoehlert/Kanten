@@ -152,7 +152,7 @@ class="inline-flex items-center px-3 py-2 text-sm  font-medium text-center text-
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> kanten@gmail.com </a>
+  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -241,7 +241,14 @@ text-shadow: 2px 2px #648af3;
 }
 
 
+@media screen and (max-width:650px) {
 
+  .mailKanten {
+font-size: 18px;
+text-decoration: none;
+color: #fff;
+}
+}
 
 
 

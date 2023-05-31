@@ -168,7 +168,7 @@
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> kanten@gmail.com </a>
+  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -275,6 +275,11 @@ font-size: 1em;
 
 
 
+.mailKanten {
+font-size: 18px;
+text-decoration: none;
+color: #fff;
+}
 
 
 }
