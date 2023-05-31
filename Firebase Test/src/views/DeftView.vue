@@ -98,7 +98,7 @@ class=" text-white mb-5 "
 todo.done}"
 
 >
-<img :src="todo.imgURL" alt="" class=" has-text-centered"  style="max-width: ;">
+<img :src="todo.imgURL" alt="" class=" me-auto ms-auto has-text-centered"  style="max-width: ;">
 <p class="eventHeader py-6">
 {{ todo.content }}    
 

@@ -96,13 +96,13 @@ class=" text-white mb-5 "
 <div class=" has-text-centered" >
 <div class="align-center justify-center">
 
-<div class="columns is-mobile is-vcentered"  style="background-color: #1838a166;" >
+<div class="columns is-mobile is-vcentered"  style="background-color: #10e71366;" >
 <div class="column"
 :class="{'has-text-success line-through' : 
 todo.done}"
 
 >
-<img :src="todo.imgURL" alt="" class=" has-text-centered"  style="max-width: ;">
+<img :src="todo.imgURL" alt="" class=" me-auto ms-auto has-text-centered"  style="max-width: ;">
 <p class="eventHeader  py-6">
 {{ todo.content }}    
 
