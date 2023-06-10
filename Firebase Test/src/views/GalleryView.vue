@@ -156,7 +156,7 @@
 </div>
 
 
-<div class="flex justify-center mt-10 ">
+<div class="socialss flex justify-center mt-10 ">
   <div>
     <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/instagramkanten.png" alt="instagram"></a>
   </div>
@@ -168,7 +168,7 @@
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -280,7 +280,9 @@ font-size: 18px;
 text-decoration: none;
 color: #fff;
 }
-
+.socials{
+  margin-left: 2em;
+}
 
 }
 

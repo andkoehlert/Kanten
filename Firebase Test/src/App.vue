@@ -322,6 +322,9 @@ onMounted(() => {
    url(../src/fonts/mundial.otf) format("truetype");
 }
 
+html::-webkit-scrollbar, body::-webkit-scrollbar{
+  display: none;
+}
 
 .background{
   overflow-y: hidden;

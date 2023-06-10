@@ -88,7 +88,7 @@
 
 <div class="card-body text-white bg-black">
 <h2 class="card-title text-white  font-bold transition cursor-pointer
- ">KANTEN SHIRT</h2>
+ " style="text-shadow: 4px 4px #1838a1;">SLIDE TO SEE MORE</h2>
 <p class="text-xs">DEFT, MANACLUB, VERTEX, X-MASSIVE DUB</p>
 <div class="card-actions justify-end">
 </div>
@@ -99,7 +99,7 @@
 
 <div class="shrink-0 lg:mt-0 mt-10">
 <div class=" grid ">
-    <h1 class="itemName  cursor-pointer lg:me-0 lg:ms-0  me-auto ms-auto">
+    <h1 class="itemName  cursor-pointer lg:me-0 lg:ms-0  me-auto ms-auto" >
       KANTEN SHIRT
     </h1>
     <p class="itemPrice lg:justify-end justify-center flex  lg:flex  ">
@@ -255,7 +255,7 @@ S
 </div>
 -->
 
-<div class="flex justify-center mt-10 ">
+<div class="socialss flex justify-center mt-10 ">
   <div>
     <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/instagramkanten.png" alt="instagram"></a>
   </div>
@@ -267,7 +267,7 @@ S
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -380,7 +380,9 @@ color: #c7c7c7;
   font-size: 50px;
 }
 
-
+.socials{
+  margin-left: 2em;
+}
 .mailKanten {
 font-size: 18px;
 text-decoration: none;

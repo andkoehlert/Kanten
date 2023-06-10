@@ -1,5 +1,5 @@
 <template>
-<div class="background ">
+<div class="background tw-bg-myown ">
 
  
 <div class="navbar bg-base-100">
@@ -373,6 +373,9 @@
   <style scoped>
   @import 'bulma/css/bulma.min.css';
   
+  .tw-bg-myown {
+    min-height:100vh
+  }
   .background{
   background-image: url("../assets/KANTENFOND.png");
 }

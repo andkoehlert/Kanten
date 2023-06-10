@@ -4,7 +4,7 @@
 
 
   
-<div class="background ">
+<div class="background   tw-bg-myown">
 
 
 <div class="navbar bg-base-100">
@@ -376,6 +376,9 @@
   
   
   <style scoped>
+  .tw-bg-myown {
+    min-height:100vh
+  }
   @import 'bulma/css/bulma.min.css';
   @font-face {
   font-family: 'MadeOkine';

@@ -175,7 +175,7 @@
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 </div>
@@ -354,6 +354,11 @@ Firebase
 
 </script>
 <style scoped>
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 .required{
   background-color:transparent;

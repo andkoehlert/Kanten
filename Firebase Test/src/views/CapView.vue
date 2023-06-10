@@ -90,7 +90,7 @@
   
   <div class="card-body text-white bg-black">
     <h2 class="card-title text-white  font-bold transition cursor-pointer
-     ">KANTEN CAP</h2>
+     " style="text-shadow: 4px 4px #1838a1;" >SLIDE TO SEE MORE</h2>
     <p class="text-xs">DEFT, MANACLUB, VERTEX, X-MASSIVE DUB</p>
     <div class="card-actions justify-end">
     </div>
@@ -255,7 +255,7 @@ S
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
    
@@ -368,7 +368,9 @@ li:hover {
       font-size: 50px;
     }
    
-   
+    .socials{
+  margin-left: 2em;
+}
    
   
    

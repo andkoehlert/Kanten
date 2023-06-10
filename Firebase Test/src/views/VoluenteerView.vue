@@ -103,7 +103,7 @@
       </h1>
 
       <div class="me-auto ms-auto mt-10">
-    <a href="#" ><img src="../assets/linkedin2.png" alt="linkedin" class="animate-bounce"></a>
+    <a href="https://www.linkedin.com/company/kanten-esbjerg/about/" ><img src="../assets/linkedin2.png" alt="linkedin" class="animate-bounce"></a>
   </div>
 
 
@@ -115,7 +115,7 @@
   
 </div>
 
-<div class="flex justify-center mt-10 ">
+<div class="socialss flex justify-center mt-10 ">
   <div>
     <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/instagramkanten.png" alt="instagram"></a>
   </div>
@@ -127,7 +127,7 @@
 </div>
 
 <div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -228,6 +228,9 @@ li:hover {
 font-size: 18px;
 text-decoration: none;
 color: #fff;
+}
+.socials{
+  margin-left: 2em;
 }
 }
 

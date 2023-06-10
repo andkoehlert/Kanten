@@ -1,5 +1,5 @@
 <template>
-<div class="background">
+<div class="background tw-bg-myown">
 
   
 <div class="navbar bg-base-100">
@@ -377,6 +377,10 @@
   src: url('../assets/MADEOkineSansPERSONALUSE-Black.otf') format('woff2');
   
 }
+
+.tw-bg-myown {
+    min-height:100vh
+  }
 .background{
   background-image: url("../assets/KANTENFOND.png");
 }

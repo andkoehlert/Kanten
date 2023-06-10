@@ -71,7 +71,7 @@
 
  
  
- <div class="flex justify-center mt-10 ">
+ <div class="socialss flex justify-center  ">
   <div>
     <a href="https://www.instagram.com/kanten_esbjerg/" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/instagramkanten.png" alt="instagram"></a>
   </div>
@@ -82,8 +82,8 @@
   <div> <a href="https://www.facebook.com/kanten.esbjerg" class="me-20 ms-20"><img class="hover:animate-bounce w-10" src="../assets/facebook-icon.png" alt="facebook"></a></div>
 </div>
 
-<div class="flex justify-center me-6 mt-5 pb-20 animate-pulse hover:animate-none">
-  <a href="#" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
+<div class="flex justify-center   pb-20 animate-pulse hover:animate-none">
+  <a href="mailto: MusikforeningenKanten@gmail.com" class="mailKanten"> MusikforeningenKanten@gmail.com </a>
 </div>
 
 
@@ -173,7 +173,7 @@ body {
   
   .logo_home{
  width: 150px;
- margin-right: 60px;
+ margin-right: 40px;
  padding-top: 80px;
 }
 
@@ -199,7 +199,7 @@ body {
 
 .logo_home{
  width: 150px;
- margin-left: 35px;
+ margin-left: 70px;
  padding-top: 80px;
 }
 
@@ -207,11 +207,7 @@ body {
   display: none;
 }
   
-.mailKanten {
-font-size: 18px;
-text-decoration: none;
-color: #fff;
-}
+ 
 
   .line_1{
   width: 250px;
@@ -222,15 +218,22 @@ color: #fff;
 }
   .navbar_2 ul li a{
 
-padding-left: 2.5em;
+padding-left: 4em;
 
   }
 
+.socialss{
+  margin-left: 2em;
+}
 
   .video{
   max-width: none;
   }
-
+  .mailKanten {
+font-size: 18px;
+text-decoration: none;
+color: #fff;
+}
   }
 
   
